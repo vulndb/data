@@ -1,1 +1,17 @@
-{"name":"Code injection (php://input wrapper)","description":"\nA modern web application will be reliant on several different programming languages.\n\nThese languages can be broken up in two flavours. These are client-side languages\n(such as those that run in the browser -- like JavaScript) and server-side\nlanguages (which are executed by the server -- like ASP, PHP, JSP, etc.) to form\nthe dynamic pages (client-side code) that are then sent to the client.\n\nBecause all server-side code should be executed by the server, it should only ever\ncome from a trusted source.\n\nCode injection occurs when the server takes untrusted code (ie. from the client)\nand executes it.\n\nCyber-criminals will abuse this weakness to execute arbitrary code on the server,\nwhich could result in complete server compromise.\n\nArachni was able to inject specific server-side code via a PHP wrapper (`php://input`)\nand have the executed output from the code contained within the server response.\nThis indicates that proper input sanitisation is not occurring.\n","references":{"OWASP":"https://www.owasp.org/index.php/Top_10_2007-Malicious_File_Execution"},"tags":["remote","injection","php","code","execution"],"cwe":94,"severity":"high","remedy_guidance":"\nIt is recommended that untrusted input is never processed as server-side code.\n\nTo validate input, the application should ensure that the supplied value contains\nonly the data that are required to perform the relevant action.\n\nFor example, where a username is required, then no non-alpha characters should not\nbe accepted.\n"}
+{
+    "name": "Code injection (php://input wrapper)", 
+    "tags": [
+        "remote", 
+        "injection", 
+        "php", 
+        "code", 
+        "execution"
+    ], 
+    "description": "\nA modern web application will be reliant on several different programming languages.\n\nThese languages can be broken up in two flavours. These are client-side languages\n(such as those that run in the browser -- like JavaScript) and server-side\nlanguages (which are executed by the server -- like ASP, PHP, JSP, etc.) to form\nthe dynamic pages (client-side code) that are then sent to the client.\n\nBecause all server-side code should be executed by the server, it should only ever\ncome from a trusted source.\n\nCode injection occurs when the server takes untrusted code (ie. from the client)\nand executes it.\n\nCyber-criminals will abuse this weakness to execute arbitrary code on the server,\nwhich could result in complete server compromise.\n\nArachni was able to inject specific server-side code via a PHP wrapper (`php://input`)\nand have the executed output from the code contained within the server response.\nThis indicates that proper input sanitisation is not occurring.\n", 
+    "references": {
+        "OWASP": "https://www.owasp.org/index.php/Top_10_2007-Malicious_File_Execution"
+    }, 
+    "cwe": 94, 
+    "remedy_guidance": "\nIt is recommended that untrusted input is never processed as server-side code.\n\nTo validate input, the application should ensure that the supplied value contains\nonly the data that are required to perform the relevant action.\n\nFor example, where a username is required, then no non-alpha characters should not\nbe accepted.\n", 
+    "severity": "high"
+}

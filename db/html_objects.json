@@ -1,1 +1,6 @@
-{"name":"HTML object","cwe":200,"description":"Logs the existence of HTML object tags.\n                Since Arachni can't execute things like Java Applets and Flash\n                this serves as a heads-up to the penetration tester to review\n                the objects in question using a different method.","severity":"informational"}
+{
+    "severity": "informational", 
+    "cwe": 200, 
+    "name": "HTML object", 
+    "description": "Logs the existence of HTML object tags.\n                Since Arachni can't execute things like Java Applets and Flash\n                this serves as a heads-up to the penetration tester to review\n                the objects in question using a different method."
+}
