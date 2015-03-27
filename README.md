@@ -20,6 +20,9 @@ It all started with these two github issues ([1](https://github.com/andresrianch
 [2](https://github.com/vulndb/data/issues/5)) and various emails between Slava,
 Andres and Tasos.
 
+The initial database information was contributed by the [Arachni scanner](http://www.arachni-scanner.com/)
+imported in [this commit](https://github.com/vulndb/data/commit/e27222af21b0569525718f591eaa2c517d4c1da2).
+
 ## SDKs
 This repository holds the vulnerability database itself, in order to make the
 information easily accessible from different programming languages these SDKs
@@ -37,3 +40,8 @@ The easiest way to contribute is:
  * Click on the top-right icon in the github UI that will open the online text editor
  * Change the file
  * Save/commit
+
+## Credits
+ * JSON format specification by [Andres Riancho](https://github.com/andresriancho/), [Tasos Laskos](https://github.com/Zapotek) and [Vyacheslav Bakhmutov](https://github.com/m0sth8)
+ * Initial data provided by the [Arachni scanner](http://www.arachni-scanner.com/) project
+ 
