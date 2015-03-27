@@ -41,15 +41,15 @@ the vulnerability database and created this repository.
 At the beginning we tried to use the CWE data, but we found several problems with
 it:
 
-    * The target audience for our vulnerability information is too busy to read the
-    [long](https://cwe.mitre.org/data/definitions/89.html) descriptions and hundreds
-    of fields provided by CWE. We want to provide enough information for the users
-    to know what's wrong and point them to information with more detailed info if
-    that's what they need.
+ * The target audience for our vulnerability information is too busy to read the
+   [long](https://cwe.mitre.org/data/definitions/89.html) descriptions and hundreds
+   of fields provided by CWE. We want to provide enough information for the users
+   to know what's wrong and point them to information with more detailed info if
+   that's what they need.
 
-    * The XML format storing the CWE data is simply too complex for our needs.
+ * The XML format storing the CWE data is simply too complex for our needs.
 
-    * Mitre never answered our questions on derivated work
+ * Mitre never answered our questions on derivated work
 
 We might still use some paragraphs from the CWE data in our database, but manually
 migrated and reviewed for clarity.
