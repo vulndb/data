@@ -1,4 +1,3 @@
-## VulnDB data
 User, contributor and developer-friendly vulnerability database. Our goal is to
 provide a vulnerability database which is:
 
