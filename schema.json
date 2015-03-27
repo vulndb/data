@@ -1,0 +1,147 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Vulnerability schema",
+  "description": "This schema describes json format for vulnerability",
+  "definitions": {
+    "multiString": {
+      "oneof": [
+        {
+          "type": "string",
+          "maxLength": 90,
+          "minLength": 30
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "maxLength": 90
+          }
+        }
+      ]
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "integer",
+      "title": "Vulnerability unique id",
+      "minimum": 1
+    },
+    "title": {
+      "type": "string",
+      "title": "Vulnerability title",
+      "minLength": 4,
+      "maxLength": 255
+    },
+    "description": {
+      "title": "A very long description for vulnerability",
+      "$ref": "#/definitions/multiString"
+    },
+    "severity": {
+      "type": "string",
+      "title": "Vulnerability severity",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "informational"
+      ]
+    },
+    "wasc": {
+      "type": "array",
+      "title": "WASC identifiers",
+      "description": "http://projects.webappsec.org/w/page/13246974/Threat%20Classification%20Reference%20Grid",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "tags": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 255
+      }
+    },
+    "cwe": {
+      "type": "array",
+      "title": "CWE indentifiers",
+      "description": "https://cwe.mitre.org/data/index.html",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "owasp_top_10": {
+      "type": "object",
+      "description": "position in owasp top ten splitted by years",
+      "patternProperties": {
+        "^[12][0-9]{3}$": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "fix": {
+      "type": "object",
+      "properties": {
+        "guidance": {
+          "$ref": "#/definitions/multiString",
+          "title": "A very long text explaining how to fix the vulnerability"
+        },
+        "effort": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "guidance",
+        "effort"
+      ]
+    },
+    "references": {
+      "type": "array",
+      "minItems": 1,      
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 255
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "title"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "description",
+    "severity",
+    "fix"
+  ]
+}
