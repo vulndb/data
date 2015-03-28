@@ -1,0 +1,44 @@
+{
+  "id": 41, 
+  "title": "Response Splitting", 
+  "severity": "medium", 
+  "description": [
+    "HTTP response splitting occurs when untrusted data is inserted into", 
+    "the response\nheaders without any sanitisation.\n\nIf successful, this", 
+    "allows cyber-criminals to essentially split the HTTP response\nin two.", 
+    "This is abused by cyber-criminals injecting CR (Carriage Return --", 
+    "`/r`)\nand LF (Line Feed -- `\\n`) characters which will then form the", 
+    "split. If the CR\nor LF characters are not processed by the server then", 
+    "it cannot be exploited.\n\nAlong with these characters, cyber-criminals", 
+    "can then construct their own\narbitrary response headers and body which", 
+    "would then form the second response.\nThe second response is entirely", 
+    "under their control, allowing for a number of\nother attacks."
+  ], 
+  "fix": {
+    "effort": 50, 
+    "guidance": [
+      "It is recommended that untrusted data is never used to form the", 
+      "contents of the\nresponse header.\n\nWhere any untrusted source is", 
+      "required to be used in the response headers, it is\nimportant to ensure", 
+      "that any hazardous characters (`/r`, `/n` and potentially\nothers) are", 
+      "sanitised prior to being used.\n\nThis is especially important when", 
+      "setting cookie values, redirecting, etc.."
+    ]
+  }, 
+  "tags": [
+    "response", 
+    "splitting", 
+    "injection", 
+    "header"
+  ], 
+  "references": [
+    {
+      "url": "http://www.securiteam.com/securityreviews/5WP0E2KFGK.html", 
+      "title": "SecuriTeam"
+    }, 
+    {
+      "url": "https://www.owasp.org/index.php/HTTP_Response_Splitting", 
+      "title": "OWASP"
+    }
+  ]
+}

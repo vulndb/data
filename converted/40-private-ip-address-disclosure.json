@@ -1,0 +1,33 @@
+{
+  "id": 40, 
+  "title": "Private IP address disclosure", 
+  "severity": "low", 
+  "description": [
+    "Private, or non-routable, IP addresses are generally used within a", 
+    "home or\ncompany network and are typically unknown to anyone outside of", 
+    "that network.\n\nCyber-criminals will attempt to identify the private IP", 
+    "address range being used\nby their victim, to aid in collecting further", 
+    "information that could then lead\nto a possible compromise.\n\nArachni", 
+    "discovered that the affected page returned a RFC 1918 compliant", 
+    "private\nIP address and therefore could be revealing sensitive", 
+    "information.\n\n_This finding typically requires manual verification to", 
+    "ensure the context is\ncorrect, as any private IP address within the", 
+    "HTML body will trigger it."
+  ], 
+  "fix": {
+    "effort": 50, 
+    "guidance": [
+      "Identifying the context in which the affected page displays a Private", 
+      "IP\naddress is necessary.\n\nIf the page is publicly accessible and", 
+      "displays the Private IP of the affected\nserver (or supporting", 
+      "infrastructure), then measures should be put in place to\nensure that", 
+      "the IP address is removed from any response."
+    ]
+  }, 
+  "references": [
+    {
+      "url": "http://projects.webappsec.org/w/page/13246936/Information%20Leakage", 
+      "title": "WebAppSec"
+    }
+  ]
+}

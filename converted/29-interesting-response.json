@@ -1,0 +1,26 @@
+{
+  "id": 29, 
+  "title": "Interesting response", 
+  "severity": "informational", 
+  "description": [
+    "The server responded with a non 200 (OK) nor 404 (Not Found) status", 
+    "code.\nThis is a non-issue, however exotic HTTP response status codes", 
+    "can provide useful\ninsights into the behavior of the web application", 
+    "and assist with the penetration test."
+  ], 
+  "fix": {
+    "effort": 50, 
+    "guidance": ""
+  }, 
+  "tags": [
+    "interesting", 
+    "response", 
+    "server"
+  ], 
+  "references": [
+    {
+      "url": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html", 
+      "title": "w3.org"
+    }
+  ]
+}

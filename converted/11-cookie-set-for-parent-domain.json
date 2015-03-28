@@ -1,0 +1,39 @@
+{
+  "id": 11, 
+  "title": "Cookie set for parent domain", 
+  "severity": "informational", 
+  "description": [
+    "HTTP by itself is a stateless protocol. Therefore the server is unable", 
+    "to determine\nwhich requests are performed by which client, and which", 
+    "clients are authenticated\nor unauthenticated.\n\nThe use of HTTP cookies", 
+    "within the headers, allows a web server to identify each\nindividual", 
+    "client and can therefore determine which clients hold valid", 
+    "authentication, from those that do not. These are known as session", 
+    "cookies.\n\nWhen a cookie is set by the server (sent the header of an", 
+    "HTTP response) there\nare several flags that can be set to configure", 
+    "the properties of the cookie and\nhow it is to be handled by the", 
+    "browser.\n\nOne of these flags represents the host, or domain. for which", 
+    "the cookie can be used.\n\nWhen the cookie is set for the parent domain,", 
+    "rather than the host, this could\nindicate that the same cookie could", 
+    "be used to access other hosts within that domain.\nWhile there are many", 
+    "legitimate reasons for this, it could also be misconfiguration", 
+    "expanding the possible surface of attacks."
+  ], 
+  "fix": {
+    "effort": 50, 
+    "guidance": [
+      "The first step to remediation is to identify the context in which the", 
+      "cookie is\nbeing set and determine if it is required by the whole", 
+      "domain, or just the\nspecific host being tested.\n\nIf it is only", 
+      "required by the host, then the domain flag should be set as such.", 
+      "Depending on the framework being used, the configuration of this flag", 
+      "will be\nmodified in different ways."
+    ]
+  }, 
+  "references": [
+    {
+      "url": "https://www.owasp.org/index.php/Testing_for_cookies_attributes_(OTG-SESS-002)", 
+      "title": "OWASP"
+    }
+  ]
+}
