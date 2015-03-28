@@ -1,30 +1,30 @@
 {
-    "description": [
-        "The US Social Security Number (SSN) is a personally identifiable", 
-        "number that is issued to its citizens.  A stolen or leaked SSN can", 
-        "lead to a compromise, and/or the theft of the affected individual's", 
-        "identity.  Through the use of regular expressions, Arachni has", 
-        "discovered an SSN located within the response of the affected page."
-    ], 
-    "title": "Disclosed US Social Security Number (SSN)", 
-    "fix": {
-        "guidance": [
-            "Initially, the SSN within the response should be checked to ensure its", 
-            "validity, as it is possible that the regular expression has matched a", 
-            "similar number with no relation to a real SSN.  If the response does", 
-            "contain a valid SSN, then all efforts should be taken to remove or", 
-            "further protect this information. This can be achieved by removing the", 
-            "SSN altogether or by masking the number so that only the last few", 
-            "digits are present within the response (eg. _**********123_)."
-        ], 
-        "effort": 50
-    }, 
-    "references": [
-        {
-            "url": "http://www.ssa.gov/pubs/10064.html", 
-            "title": "ssa.gov"
-        }
-    ], 
-    "id": 48, 
-    "severity": "high"
+  "id": 48, 
+  "title": "Disclosed US Social Security Number (SSN)", 
+  "severity": "high", 
+  "description": [
+    "The US Social Security Number (SSN) is a personally identifiable", 
+    "number that is\nissued to its citizens.\n\nA stolen or leaked SSN can", 
+    "lead to a compromise, and/or the theft of the affected\nindividual's", 
+    "identity.\n\nThrough the use of regular expressions, Arachni has", 
+    "discovered an SSN located\nwithin the response of the affected page."
+  ], 
+  "fix": {
+    "effort": 50, 
+    "guidance": [
+      "Initially, the SSN within the response should be checked to ensure its", 
+      "validity,\nas it is possible that the regular expression has matched a", 
+      "similar number with\nno relation to a real SSN.\n\nIf the response does", 
+      "contain a valid SSN, then all efforts should be taken to\nremove or", 
+      "further protect this information. This can be achieved by removing the", 
+      "SSN altogether or by masking the number so that only the last few", 
+      "digits are\npresent within the response (eg. _**********123_)."
+    ]
+  }, 
+  "references": [
+    {
+      "url": "http://www.ssa.gov/pubs/10064.html", 
+      "title": "ssa.gov"
+    }
+  ]
 }

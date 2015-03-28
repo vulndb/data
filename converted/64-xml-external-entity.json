@@ -1,30 +1,30 @@
 {
-    "description": [
-        "An XML External Entity attack is a type of attack against an", 
-        "application that parses XML input.  This attack occurs when XML input", 
-        "containing a reference to an external entity is processed by a weakly", 
-        "configured XML parser.  This attack may lead to the disclosure of", 
-        "confidential data, denial of service, port scanning from the", 
-        "perspective of the machine where the parser is located, and other", 
-        "system impacts."
-    ], 
-    "title": "XML External Entity", 
-    "fix": {
-        "guidance": [
-            "Since the whole XML document is communicated from an untrusted client,", 
-            "it's not usually possible to selectively validate or escape tainted", 
-            "data within the system identifier in the DTD.  Therefore, the XML", 
-            "processor should be configured to use a local static DTD and disallow", 
-            "any declared DTD included in the XML document."
-        ], 
-        "effort": 50
-    }, 
-    "references": [
-        {
-            "url": "https://www.owasp.org/index.php/XML_External_Entity_%28XXE%29_Processing", 
-            "title": "OWASP"
-        }
-    ], 
-    "id": 64, 
-    "severity": "high"
+  "id": 64, 
+  "title": "XML External Entity", 
+  "severity": "high", 
+  "description": [
+    "An XML External Entity attack is a type of attack against an", 
+    "application that\nparses XML input.\n\nThis attack occurs when XML input", 
+    "containing a reference to an external entity is\nprocessed by a weakly", 
+    "configured XML parser.\n\nThis attack may lead to the disclosure of", 
+    "confidential data, denial of service,\nport scanning from the", 
+    "perspective of the machine where the parser is located,\nand other", 
+    "system impacts."
+  ], 
+  "fix": {
+    "effort": 50, 
+    "guidance": [
+      "Since the whole XML document is communicated from an untrusted client,", 
+      "it's not\nusually possible to selectively validate or escape tainted", 
+      "data within the system\nidentifier in the DTD.\n\nTherefore, the XML", 
+      "processor should be configured to use a local static DTD and\ndisallow", 
+      "any declared DTD included in the XML document."
+    ]
+  }, 
+  "references": [
+    {
+      "url": "https://www.owasp.org/index.php/XML_External_Entity_%28XXE%29_Processing", 
+      "title": "OWASP"
+    }
+  ]
 }
