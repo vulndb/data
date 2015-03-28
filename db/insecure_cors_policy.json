@@ -1,9 +1,0 @@
-{
-    "severity": "low", 
-    "references": {
-        "OWASP": "https://www.owasp.org/index.php/CORS_OriginHeaderScrutiny"
-    }, 
-    "name": "Missing 'Access-Control-Allow-Origin' header", 
-    "remedy_guidance": "", 
-    "description": ""
-}
