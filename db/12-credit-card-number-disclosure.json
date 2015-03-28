@@ -9,7 +9,7 @@
     "will use various methods to attempt to compromise credit\ncard", 
     "information that can then be used for fraudulent purposes.\n\nThrough", 
     "the use of regular expressions and CC number format validation,", 
-    "Arachni\nwas able to discover a credit card number located within the", 
+    "The tool\nwas able to discover a credit card number located within the", 
     "affected page."
   ], 
   "fix": {

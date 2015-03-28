@@ -11,7 +11,7 @@
     "determine which methods are allowed.\n\nCyber-criminals will almost", 
     "always perform this simple test as it will give a\nvery quick", 
     "indication of any high-risk methods being permitted by the server.", 
-    "Arachni discovered that several methods are supported by the server."
+    "The tool discovered that several methods are supported by the server."
   ], 
   "fix": {
     "effort": 50, 

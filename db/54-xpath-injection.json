@@ -14,7 +14,7 @@
     "injection vulnerability to bypass authentication,\nquery other user's", 
     "information, or, if the XML document contains privileged user", 
     "credentials, allow the cyber-criminal to escalate their privileges.", 
-    "Arachni injected special XPath query characters into the page and", 
+    "The tool injected special XPath query characters into the page and", 
     "based on the\nresponses from the server, has determined that the page", 
     "is vulnerable to XPath injection."
   ], 

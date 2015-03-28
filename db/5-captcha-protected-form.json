@@ -8,7 +8,7 @@
     "interaction with the application and are often\nused on forms where the", 
     "application conducts sensitive actions. These typically\ninclude user", 
     "registration, or submitting emails via \"Contact Us\" pages etc.", 
-    "Arachni has flagged this not as a vulnerability, but as a prompt for", 
+    "The tool has flagged this not as a vulnerability, but as a prompt for", 
     "the\npenetration tester to conduct further manual testing on the", 
     "CAPTCHA function, as\nThe tool cannon audit CAPTCHA protected forms.", 
     "Testing for insecurely implemented CAPTCHA is a manual process, and an", 
