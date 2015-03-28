@@ -15,7 +15,7 @@
     "browser.\n\nOne of these flags is known as the `secure` flag. When the", 
     "secure flag is set,\nthe browser will prevent it from being sent over a", 
     "clear text channel (HTTP) and\nonly allow it to be sent when an", 
-    "encrypted channel is used (HTTPS).\n\nArachni discovered that a cookie", 
+    "encrypted channel is used (HTTPS).\n\nThe tool discovered that a cookie", 
     "was set by the server without the secure flag\nbeing set. Although the", 
     "initial setting of this cookie was via an HTTPS\nconnection, any HTTP", 
     "link to the same server will result in the cookie being\nsend in clear", 

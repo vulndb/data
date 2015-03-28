@@ -11,7 +11,7 @@
     "is then executed by the server.\n\nCyber-criminals will abuse this", 
     "weakness to perform their own arbitrary commands\non the server. This", 
     "can include everything from simple `ping` commands to map the\ninternal", 
-    "network, to obtaining full control of the server.\n\nArachni was able to", 
+    "network, to obtaining full control of the server.\n\nThe tool was able to", 
     "inject specific Operating System commands and have the output\nfrom", 
     "that command contained within the server response. This indicates that", 
     "proper\ninput sanitisation is not occurring."

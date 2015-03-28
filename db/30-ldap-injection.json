@@ -13,7 +13,7 @@
     "without prior sanitisation.\n\nThis is a serious security risk, as it", 
     "could allow cyber-criminals the ability\nto query, modify, or remove", 
     "anything from the LDAP tree. It could also allow other\nadvanced", 
-    "injection techniques that perform other more serious attacks.\n\nArachni", 
+    "injection techniques that perform other more serious attacks.\n\nThe tool", 
     "was able to detect a page that is vulnerable to LDAP injection based", 
     "on\nknown error messages."
   ], 

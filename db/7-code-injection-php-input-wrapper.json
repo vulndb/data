@@ -14,7 +14,7 @@
     "when the server takes untrusted code (ie. from the client)\nand", 
     "executes it.\n\nCyber-criminals will abuse this weakness to execute", 
     "arbitrary code on the server,\nwhich could result in complete server", 
-    "compromise.\n\nArachni was able to inject specific server-side code via", 
+    "compromise.\n\nThe tool was able to inject specific server-side code via", 
     "a PHP wrapper (`php://input`)\nand have the executed output from the", 
     "code contained within the server response.\nThis indicates that proper", 
     "input sanitisation is not occurring."

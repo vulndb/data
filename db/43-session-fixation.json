@@ -21,7 +21,7 @@
     "links with a\npredetermined session token within the link. The", 
     "cyber-criminal will then wait\nfor the victim to login and become", 
     "authenticated.\nIf successful, the cyber-criminal will know a valid", 
-    "session ID and therefore have\naccess to the victim's session.\n\nArachni", 
+    "session ID and therefore have\naccess to the victim's session.\n\nThe tool", 
     "has discovered that it is able to set its own session token."
   ], 
   "fix": {

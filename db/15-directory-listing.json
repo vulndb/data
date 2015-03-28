@@ -9,7 +9,7 @@
     "is then able to traverse each\ndirectory and download the files.", 
     "Cyber-criminals will utilise the presence of directory listing to", 
     "discover\nsensitive files, download protected content, or even just", 
-    "learn how the web\napplication is structured.\n\nArachni discovered that", 
+    "learn how the web\napplication is structured.\n\nThe tool discovered that", 
     "the affected page permits directory listing."
   ], 
   "fix": {

@@ -12,7 +12,7 @@
     "`yoursite.com/page.asp?redirect=www.anothersite.com`\nwill redirect to", 
     "`www.anothersite.com`.\n\nCyber-criminals will abuse these", 
     "vulnerabilities in social engineering attacks\nto get users to", 
-    "unknowingly visit malicious web sites.\n\nArachni has discovered that", 
+    "unknowingly visit malicious web sites.\n\nThe tool has discovered that", 
     "the server does not validate the parameter value prior\nto redirecting", 
     "the client to the injected value."
   ], 

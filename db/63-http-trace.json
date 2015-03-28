@@ -12,7 +12,7 @@
     "installations the `TRACE` method is still enabled.\n\nWhile not", 
     "vulnerable by itself, it does provide a method for cyber-criminals to", 
     "bypass the `HTTPOnly` cookie flag, and therefore could allow a XSS", 
-    "attack to\nsuccessfully access a session token.\n\nArachni has discovered", 
+    "attack to\nsuccessfully access a session token.\n\nThe tool has discovered", 
     "that the affected page permits the HTTP `TRACE` method."
   ], 
   "fix": {

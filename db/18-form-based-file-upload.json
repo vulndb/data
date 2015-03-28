@@ -5,7 +5,7 @@
   "description": [
     "The design of many web applications require that users be able to", 
     "upload files\nthat will either be stored or processed by the receiving", 
-    "web server.\n\nArachni has flagged this not as a vulnerability, but as a", 
+    "web server.\n\nThe tool has flagged this not as a vulnerability, but as a", 
     "prompt for the\npenetration tester to conduct further manual testing on", 
     "the file upload function.\n\nAn insecure form-based file upload could", 
     "allow a cyber-criminal a means to abuse\nand successfully exploit the", 

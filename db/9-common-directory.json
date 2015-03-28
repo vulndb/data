@@ -14,7 +14,7 @@
     "compromise of the web application.\nTo achieve this they will make", 
     "thousands of requests using word lists containing\ncommon names.\nThe", 
     "response headers from the server will then indicate if the directory", 
-    "exists.\n\nArachni also contains a list of common directory names which", 
+    "exists.\n\nThe tool also contains a list of common directory names which", 
     "it will attempt to access."
   ], 
   "fix": {

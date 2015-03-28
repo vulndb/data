@@ -12,7 +12,7 @@
     "may be forced to authenticate, while an\ninternal IP address may not.", 
     "Because this header can also be set by the client, it allows", 
     "cyber-criminals to\nspoof their IP address and potentially gain access", 
-    "to restricted pages.\n\nArachni discovered a resource that it did not", 
+    "to restricted pages.\n\nThe tool discovered a resource that it did not", 
     "have permission to access, but been\ngranted access after spoofing the", 
     "address of localhost (127.0.0.1), thus bypassing\nany requirement to", 
     "authenticate."

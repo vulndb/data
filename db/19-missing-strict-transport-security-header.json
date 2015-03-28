@@ -15,7 +15,7 @@
     "the same server.\n\nCyber-criminals will often attempt to compromise", 
     "sensitive information passed\nfrom the client to the server using HTTP.", 
     "This can be conducted via various\nMan-in-The-Middle (MiTM) attacks or", 
-    "through network packet captures.\n\nArachni discovered that the affected", 
+    "through network packet captures.\n\nThe tool discovered that the affected", 
     "application is using HTTPS however does not\nuse the HSTS header."
   ], 
   "fix": {

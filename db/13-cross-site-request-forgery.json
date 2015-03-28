@@ -18,7 +18,7 @@
     "for a CSRF attack to occur:\n\n1. The form must perform some sort of", 
     "sensitive action.\n2. The victim (the administrator the example above)", 
     "must have an active session.\n3. Most importantly, all parameter values", 
-    "must be **known** or **guessable**.\n\nArachni discovered that all", 
+    "must be **known** or **guessable**.\n\nThe tool discovered that all", 
     "parameters within the form were known or predictable\nand therefore the", 
     "form could be vulnerable to CSRF.\n\n_Manual verification may be", 
     "required to check whether the submission will then\nperform a sensitive", 

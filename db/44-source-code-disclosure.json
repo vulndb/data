@@ -20,7 +20,7 @@
     "application workflow, this can be\nextremely risky.\n\nCyber-criminals", 
     "will attempt to discover pages that either accidentally or\nforcefully", 
     "allow the server-side source code to be disclosed, to assist in", 
-    "discovering further vulnerabilities or sensitive information.\n\nArachni", 
+    "discovering further vulnerabilities or sensitive information.\n\nThe tool", 
     "has detected server-side source code within the server's response.", 
     "_(False positives may occur when requesting binary files such as", 
     "images\n(.JPG or .PNG) and may require manual verification.)_"

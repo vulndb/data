@@ -12,7 +12,7 @@
     "code (PHP, ASP, etc) to be uploaded to\nthe server.\n\nCyber-criminals", 
     "will search for servers supporting the `PUT` method with the\nintention", 
     "of modifying existing pages, or uploading web shells to take control", 
-    "of the server.\n\nArachni has discovered that the affected path allows", 
+    "of the server.\n\nThe tool has discovered that the affected path allows", 
     "clients to use the `PUT`\nmethod. During this test, Arachni has `PUT` a", 
     "file on the server within the web\nroot and successfully performed a", 
     "`GET` request to its location and verified the\ncontents."

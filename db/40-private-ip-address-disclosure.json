@@ -7,7 +7,7 @@
     "home or\ncompany network and are typically unknown to anyone outside of", 
     "that network.\n\nCyber-criminals will attempt to identify the private IP", 
     "address range being used\nby their victim, to aid in collecting further", 
-    "information that could then lead\nto a possible compromise.\n\nArachni", 
+    "information that could then lead\nto a possible compromise.\n\nThe tool", 
     "discovered that the affected page returned a RFC 1918 compliant", 
     "private\nIP address and therefore could be revealing sensitive", 
     "information.\n\n_This finding typically requires manual verification to", 

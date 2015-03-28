@@ -19,7 +19,7 @@
     "`yoursite.com/error.php?page=../../../../etc/passwd`\n\nAs path", 
     "traversal is based on the relative path, the payload must first", 
     "traverse\nto the file system's root directory, hence the string of", 
-    "`../../../../`.\n\nArachni discovered that it was possible to substitute", 
+    "`../../../../`.\n\nThe tool discovered that it was possible to substitute", 
     "a parameter value with a\nrelative path to a common operating system", 
     "file and have the contents of the file\nincluded in the response."
   ], 

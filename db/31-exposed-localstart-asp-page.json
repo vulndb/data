@@ -15,7 +15,7 @@
     "users, or domain users if the web server is a domain member.", 
     "Cyber-criminals will attempt to locate protected pages to gain access", 
     "to them\nand also perform brute force attacks to discover valid", 
-    "credentials.\n\nArachni discovered the following page requires NTLM", 
+    "credentials.\n\nThe tool discovered the following page requires NTLM", 
     "based basic authentication\nin order to be accessed."
   ], 
   "fix": {

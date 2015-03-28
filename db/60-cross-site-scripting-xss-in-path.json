@@ -14,7 +14,7 @@
     "script is returned immediately this is known as reflected XSS.\nIf the", 
     "injected script is stored by the server and returned to any client", 
     "visiting\nthe affected page, then this is known as persistent XSS (also", 
-    "stored XSS).\n\nArachni has discovered that it is possible to insert", 
+    "stored XSS).\n\nThe tool has discovered that it is possible to insert", 
     "script content directly into\nthe requested PATH and have it returned", 
     "in the server's response.\nFor example", 
     "`HTTP://yoursite.com/INJECTION_HERE/`, where `INJECTION_HERE`", 

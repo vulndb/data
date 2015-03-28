@@ -15,7 +15,7 @@
     "therefore,\nif the resource contains server-side code matching that of", 
     "the framework being\nused (ASP, PHP, JSP, etc.), it is probable that", 
     "the resource will be executed\nas if it were part of the web", 
-    "application.\n\nArachni discovered that it was possible to substitute a", 
+    "application.\n\nThe tool discovered that it was possible to substitute a", 
     "parameter value with an\nexternal resource and have the server fetch it", 
     "and include its contents in the response."
   ], 

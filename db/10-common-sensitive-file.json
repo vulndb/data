@@ -13,7 +13,7 @@
     "the hope that the file will assist in further\ncompromise of the web", 
     "application.\nTo achieve this they will make thousands of requests", 
     "using word lists containing\ncommon filenames.\nThe response headers", 
-    "from the server will then indicate if the file exists.\n\nArachni also", 
+    "from the server will then indicate if the file exists.\n\nThe tool also", 
     "contains a list of common file names which it will attempt to access."
   ], 
   "fix": {

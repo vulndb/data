@@ -13,7 +13,7 @@
     "loaded page.\n\nThis occurs when elements of the DOM (known as the", 
     "sources) are able to be\nmanipulated to contain untrusted data, which", 
     "the client-side scripts (known as the\nsinks) use or execute an unsafe", 
-    "way.\n\nArachni has discovered that by modifying the affected DOM", 
+    "way.\n\nThe tool has discovered that by modifying the affected DOM", 
     "source, it is possible\nto insert and execute JavaScript code."
   ], 
   "fix": {

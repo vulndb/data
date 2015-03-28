@@ -13,7 +13,7 @@
     "loaded page.\n\nThis occurs when elements of the DOM (known as the", 
     "sources) are able to be\nmanipulated to contain untrusted data, which", 
     "the client-side scripts (known as the\nsinks) use or execute an unsafe", 
-    "way.\n\nArachni has discovered that by inserting an HTML element into", 
+    "way.\n\nThe tool has discovered that by inserting an HTML element into", 
     "the pages DOM inputs\n(sources) it was possible to then have the HTML", 
     "element rendered as part of the\npage by the sink."
   ], 
