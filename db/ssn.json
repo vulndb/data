@@ -1,6 +1,6 @@
 {
     "name": "Disclosed US Social Security Number (SSN)", 
-    "description": "\nThe US Social Security Number (SSN) is a personally identifiable number that is\nissued to its citizens.\n\nA stolen or leaked SSN can lead to a compromise, and/or the theft of the affected\nindividual's identity.\n\nThrough the use of regular expressions, Arachni has discovered an SSN located\nwithin the response of the affected page.\n", 
+    "description": "\nThe US Social Security Number (SSN) is a personally identifiable number that is\nissued to its citizens.\n\nA stolen or leaked SSN can lead to a compromise, and/or the theft of the affected\nindividual's identity.\n\nThrough the use of regular expressions, The tool has discovered an SSN located\nwithin the response of the affected page.\n", 
     "references": {
         "ssa.gov": "http://www.ssa.gov/pubs/10064.html"
     }, 

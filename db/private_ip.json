@@ -1,6 +1,6 @@
 {
     "name": "Private IP address disclosure", 
-    "description": "\nPrivate, or non-routable, IP addresses are generally used within a home or\ncompany network and are typically unknown to anyone outside of that network.\n\nCyber-criminals will attempt to identify the private IP address range being used\nby their victim, to aid in collecting further information that could then lead\nto a possible compromise.\n\nArachni discovered that the affected page returned a RFC 1918 compliant private\nIP address and therefore could be revealing sensitive information.\n\n_This finding typically requires manual verification to ensure the context is\ncorrect, as any private IP address within the HTML body will trigger it.\n", 
+    "description": "\nPrivate, or non-routable, IP addresses are generally used within a home or\ncompany network and are typically unknown to anyone outside of that network.\n\nCyber-criminals will attempt to identify the private IP address range being used\nby their victim, to aid in collecting further information that could then lead\nto a possible compromise.\n\nThe tool discovered that the affected page returned a RFC 1918 compliant private\nIP address and therefore could be revealing sensitive information.\n\n_This finding typically requires manual verification to ensure the context is\ncorrect, as any private IP address within the HTML body will trigger it.\n", 
     "references": {
         "WebAppSec": "http://projects.webappsec.org/w/page/13246936/Information%20Leakage"
     }, 

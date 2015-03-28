@@ -7,7 +7,7 @@
         "database", 
         "error"
     ], 
-    "description": "\nA NoSQL injection occurs when a value originating from the client's request is\nused within a NoSQL call without prior sanitisation.\n\nThis can allow cyber-criminals to execute arbitrary NoSQL code and thus steal data,\nor use the additional functionality of the database server to take control of\nfurther server components.\n\nArachni discovered that the affected page and parameter are vulnerable. This\ninjection was detected as Arachni was able to discover known error messages within\nthe server's response.\n", 
+    "description": "\nA NoSQL injection occurs when a value originating from the client's request is\nused within a NoSQL call without prior sanitisation.\n\nThis can allow cyber-criminals to execute arbitrary NoSQL code and thus steal data,\nor use the additional functionality of the database server to take control of\nfurther server components.\n\nThe tool discovered that the affected page and parameter are vulnerable. This\ninjection was detected as The tool was able to discover known error messages within\nthe server's response.\n", 
     "references": {
         "OWASP": "https://www.owasp.org/index.php/Testing_for_NoSQL_injection"
     }, 

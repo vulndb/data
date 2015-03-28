@@ -1,6 +1,6 @@
 {
     "name": "Credit card number disclosure", 
-    "description": "\nCredit card numbers are used in applications where a user is able to purchase\ngoods and/or services.\n\nA credit card number is a sensitive piece of information and should be handled\nas such. Cyber-criminals will use various methods to attempt to compromise credit\ncard information that can then be used for fraudulent purposes.\n\nThrough the use of regular expressions and CC number format validation, Arachni\nwas able to discover a credit card number located within the affected page.\n", 
+    "description": "\nCredit card numbers are used in applications where a user is able to purchase\ngoods and/or services.\n\nA credit card number is a sensitive piece of information and should be handled\nas such. Cyber-criminals will use various methods to attempt to compromise credit\ncard information that can then be used for fraudulent purposes.\n\nThrough the use of regular expressions and CC number format validation, The tool\nwas able to discover a credit card number located within the affected page.\n", 
     "references": {
         "Luhn Ruby implementation": "https://gist.github.com/1182499", 
         "Wikipedia - Luhn algorithm": "http://en.wikipedia.org/wiki/Luhn_algorithm", 

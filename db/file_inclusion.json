@@ -7,7 +7,7 @@
         "injection", 
         "regexp"
     ], 
-    "description": "\nWeb applications occasionally use parameter values to store the location of a file\nwhich will later be required by the server.\n\nAn example of this is often seen in error pages, where the actual file path for\nthe error page is stored in a parameter value -- for example `example.com/error.php?page=404.php`.\n\nA file inclusion occurs when the parameter value (ie. path to file) can be\nsubstituted with the path of another resource on the same server, effectively\nallowing the displaying of arbitrary, and possibly restricted/sensitive, files.\n\nArachni discovered that it was possible to substitute a parameter value with another\nresource and have the server return the contents of the resource to the client within\nthe response.\n", 
+    "description": "\nWeb applications occasionally use parameter values to store the location of a file\nwhich will later be required by the server.\n\nAn example of this is often seen in error pages, where the actual file path for\nthe error page is stored in a parameter value -- for example `example.com/error.php?page=404.php`.\n\nA file inclusion occurs when the parameter value (ie. path to file) can be\nsubstituted with the path of another resource on the same server, effectively\nallowing the displaying of arbitrary, and possibly restricted/sensitive, files.\n\nThe tool discovered that it was possible to substitute a parameter value with another\nresource and have the server return the contents of the resource to the client within\nthe response.\n", 
     "references": {
         "OWASP": "https://www.owasp.org/index.php/PHP_File_Inclusion"
     }, 

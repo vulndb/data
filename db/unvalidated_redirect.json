@@ -7,7 +7,7 @@
         "header", 
         "location"
     ], 
-    "description": "\nWeb applications occasionally use parameter values to store the address of the\npage to which the client will be redirected -- for example:\n`yoursite.com/page.asp?redirect=www.yoursite.com/404.asp`\n\nAn unvalidated redirect occurs when the client is able to modify the affected\nparameter value in the request and thus control the location of the redirection.\nFor example, the following URL `yoursite.com/page.asp?redirect=www.anothersite.com`\nwill redirect to `www.anothersite.com`.\n\nCyber-criminals will abuse these vulnerabilities in social engineering attacks\nto get users to unknowingly visit malicious web sites.\n\nArachni has discovered that the server does not validate the parameter value prior\nto redirecting the client to the injected value.\n", 
+    "description": "\nWeb applications occasionally use parameter values to store the address of the\npage to which the client will be redirected -- for example:\n`yoursite.com/page.asp?redirect=www.yoursite.com/404.asp`\n\nAn unvalidated redirect occurs when the client is able to modify the affected\nparameter value in the request and thus control the location of the redirection.\nFor example, the following URL `yoursite.com/page.asp?redirect=www.anothersite.com`\nwill redirect to `www.anothersite.com`.\n\nCyber-criminals will abuse these vulnerabilities in social engineering attacks\nto get users to unknowingly visit malicious web sites.\n\nThe tool has discovered that the server does not validate the parameter value prior\nto redirecting the client to the injected value.\n", 
     "references": {
         "OWASP Top 10 2010": "https://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards"
     }, 
