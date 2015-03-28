@@ -1,0 +1,45 @@
+{
+    "description": [
+        "The `TRACE` HTTP method allows a client so send a request to the", 
+        "server, and have the same request then send back in the server's", 
+        "response. This allows the client to determine if the server is", 
+        "receiving the request as expected or if specific parts of the request", 
+        "are not arriving as expected. For example incorrect encoding or a load", 
+        "balancer has filtered or changed a value. On many default", 
+        "installations the `TRACE` method is still enabled.  While not", 
+        "vulnerable by itself, it does provide a method for cyber-criminals to", 
+        "bypass the `HTTPOnly` cookie flag, and therefore could allow a XSS", 
+        "attack to successfully access a session token.  Arachni has discovered", 
+        "that the affected page permits the HTTP `TRACE` method."
+    ], 
+    "tags": [
+        "xst", 
+        "methods", 
+        "trace", 
+        "server"
+    ], 
+    "fix": {
+        "guidance": [
+            "The HTTP `TRACE` method is normally not required within production", 
+            "sites and should therefore be disabled.  Depending on the function", 
+            "being performed by the web application, the risk level can start low", 
+            "and increase as more functionality is implemented.  The remediation is", 
+            "typically a very simple configuration change and in most cases will", 
+            "not have any negative impact on the server or application."
+        ], 
+        "effort": 50
+    }, 
+    "title": "HTTP TRACE", 
+    "references": [
+        {
+            "url": "http://capec.mitre.org/data/definitions/107.html", 
+            "title": "CAPEC"
+        }, 
+        {
+            "url": "http://www.owasp.org/index.php/Cross_Site_Tracing", 
+            "title": "OWASP"
+        }
+    ], 
+    "id": 63, 
+    "severity": "medium"
+}

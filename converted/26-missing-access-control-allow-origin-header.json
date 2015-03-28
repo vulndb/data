@@ -1,0 +1,16 @@
+{
+    "description": "", 
+    "title": "Missing 'Access-Control-Allow-Origin' header", 
+    "fix": {
+        "guidance": "", 
+        "effort": 50
+    }, 
+    "references": [
+        {
+            "url": "https://www.owasp.org/index.php/CORS_OriginHeaderScrutiny", 
+            "title": "OWASP"
+        }
+    ], 
+    "id": 26, 
+    "severity": "low"
+}

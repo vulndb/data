@@ -1,0 +1,37 @@
+{
+    "description": [
+        "A NoSQL injection occurs when a value originating from the client's", 
+        "request is used within a NoSQL call without prior sanitisation.  This", 
+        "can allow cyber-criminals to execute arbitrary NoSQL code and thus", 
+        "steal data, or use the additional functionality of the database server", 
+        "to take control of further server components.  Arachni discovered that", 
+        "the affected page and parameter are vulnerable. This injection was", 
+        "detected as Arachni was able to discover known error messages within", 
+        "the server's response."
+    ], 
+    "tags": [
+        "nosql", 
+        "injection", 
+        "regexp", 
+        "database", 
+        "error"
+    ], 
+    "fix": {
+        "guidance": [
+            "The most effective remediation against NoSQL injection attacks is to", 
+            "ensure that NoSQL API calls are not constructed via string", 
+            "concatenation that includes unsanitized data.  Sanitization is best", 
+            "achieved using existing escaping libraries."
+        ], 
+        "effort": 50
+    }, 
+    "title": "NoSQL Injection", 
+    "references": [
+        {
+            "url": "https://www.owasp.org/index.php/Testing_for_NoSQL_injection", 
+            "title": "OWASP"
+        }
+    ], 
+    "id": 33, 
+    "severity": "high"
+}

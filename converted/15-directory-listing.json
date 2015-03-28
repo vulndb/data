@@ -1,0 +1,49 @@
+{
+    "description": [
+        "Web servers permitting directory listing are typically used for", 
+        "sharing files.  Directory listing allows the client to view a simple", 
+        "list of all the files and folders hosted on the web server. The client", 
+        "is then able to traverse each directory and download the files.", 
+        "Cyber-criminals will utilise the presence of directory listing to", 
+        "discover sensitive files, download protected content, or even just", 
+        "learn how the web application is structured.  Arachni discovered that", 
+        "the affected page permits directory listing."
+    ], 
+    "tags": [
+        "path", 
+        "directory", 
+        "listing", 
+        "index"
+    ], 
+    "fix": {
+        "guidance": [
+            "Unless the web server is being utilised to share static and non-", 
+            "sensitive files, enabling directory listing is considered a poor", 
+            "security practice  This can typically be done with a simple", 
+            "configuration change on the server. The steps to disable the directory", 
+            "listing will differ depending on the type of server being used (IIS,", 
+            "Apache, etc.). If directory listing is required, and permitted, then", 
+            "steps should be taken to ensure that the risk of such a configuration", 
+            "is reduced.  These can include:  1. Requiring authentication to access", 
+            "affected pages. 2. Adding the affected path to the `robots.txt` file", 
+            "to prevent the directory    contents being searchable via search", 
+            "engines. 3. Ensuring that sensitive files are not stored within the", 
+            "web or document root. 4. Removing any files that are not required for", 
+            "the application to function."
+        ], 
+        "effort": 50
+    }, 
+    "title": "Directory listing", 
+    "references": [
+        {
+            "url": "http://projects.webappsec.org/w/page/13246922/Directory%20Indexing", 
+            "title": "WASC"
+        }, 
+        {
+            "url": "http://cwe.mitre.org/data/definitions/548.html", 
+            "title": "CWE"
+        }
+    ], 
+    "id": 15, 
+    "severity": "low"
+}

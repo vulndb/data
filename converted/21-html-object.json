@@ -1,0 +1,15 @@
+{
+    "id": 21, 
+    "description": [
+        "Logs the existence of HTML object tags.                 Since Arachni", 
+        "can't execute things like Java Applets and Flash                 this", 
+        "serves as a heads-up to the penetration tester to review", 
+        "the objects in question using a different method."
+    ], 
+    "fix": {
+        "guidance": "", 
+        "effort": 50
+    }, 
+    "severity": "informational", 
+    "title": "HTML object"
+}

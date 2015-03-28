@@ -1,0 +1,30 @@
+{
+    "description": [
+        "The US Social Security Number (SSN) is a personally identifiable", 
+        "number that is issued to its citizens.  A stolen or leaked SSN can", 
+        "lead to a compromise, and/or the theft of the affected individual's", 
+        "identity.  Through the use of regular expressions, Arachni has", 
+        "discovered an SSN located within the response of the affected page."
+    ], 
+    "title": "Disclosed US Social Security Number (SSN)", 
+    "fix": {
+        "guidance": [
+            "Initially, the SSN within the response should be checked to ensure its", 
+            "validity, as it is possible that the regular expression has matched a", 
+            "similar number with no relation to a real SSN.  If the response does", 
+            "contain a valid SSN, then all efforts should be taken to remove or", 
+            "further protect this information. This can be achieved by removing the", 
+            "SSN altogether or by masking the number so that only the last few", 
+            "digits are present within the response (eg. _**********123_)."
+        ], 
+        "effort": 50
+    }, 
+    "references": [
+        {
+            "url": "http://www.ssa.gov/pubs/10064.html", 
+            "title": "ssa.gov"
+        }
+    ], 
+    "id": 48, 
+    "severity": "high"
+}
