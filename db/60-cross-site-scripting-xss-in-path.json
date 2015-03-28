@@ -18,7 +18,7 @@
     "script content directly into\nthe requested PATH and have it returned", 
     "in the server's response.\nFor example", 
     "`HTTP://yoursite.com/INJECTION_HERE/`, where `INJECTION_HERE`", 
-    "represents the location where the Arachni payload was injected."
+    "represents the location where the the tool payload was injected."
   ], 
   "fix": {
     "effort": 50, 

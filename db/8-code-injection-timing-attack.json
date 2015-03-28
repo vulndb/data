@@ -15,7 +15,7 @@
     "executes it.\n\nCyber-criminals will abuse this weakness to execute", 
     "arbitrary code on the server,\nwhich could result in complete server", 
     "compromise.\n\nBy injecting server-side code that is known to take a", 
-    "specific amount of time to\nexecute, Arachni was able to detect", 
+    "specific amount of time to\nexecute, the tool was able to detect", 
     "time-based code injection. This indicates that\nproper input", 
     "sanitisation is not occurring."
   ], 

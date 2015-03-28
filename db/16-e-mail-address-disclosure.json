@@ -10,7 +10,7 @@
     "gathering, cyber-criminals will spider\na website and using automated", 
     "methods collect as many email addresses as possible,\nthat they may", 
     "then use in a social engineering attack.\n\nUsing the same automated", 
-    "methods, Arachni was able to detect one or more email\naddresses that", 
+    "methods, the tool was able to detect one or more email\naddresses that", 
     "were stored within the affected page."
   ], 
   "fix": {

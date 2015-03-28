@@ -13,7 +13,7 @@
     "already discovered on\nthe webserver. By analysing the response headers", 
     "from the server they are able to\ndetermine if the backup file exists.", 
     "These backup files can then assist in the compromise of the web", 
-    "application.\n\nBy utilising the same method, Arachni was able to", 
+    "application.\n\nBy utilising the same method, the tool was able to", 
     "discover a possible backup file."
   ], 
   "fix": {

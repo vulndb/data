@@ -18,7 +18,7 @@
     "take control of more server components.\n\nThe successful exploitation", 
     "of a SQL injection can be devastating to an\norganisation and is one of", 
     "the most commonly exploited web application vulnerabilities.\n\nThis", 
-    "injection was detected as Arachni was able to inject specific SQL", 
+    "injection was detected as the tool was able to inject specific SQL", 
     "queries,\nthat if vulnerable, result in the responses for each request", 
     "being delayed before\nbeing sent by the server.\nThis is known as a", 
     "time-based blind SQL injection vulnerability."

@@ -17,7 +17,7 @@
     "stored XSS).\n\nThe tool has discovered that it is possible to insert", 
     "script content directly into\nan HTML event attribute. For example", 
     "`<div onmouseover=\"x=INJECTION_HERE\"</div>`,\nwhere `INJECTION_HERE`", 
-    "represents the location where the Arachni payload was detected."
+    "represents the location where the the tool payload was detected."
   ], 
   "fix": {
     "effort": 50, 

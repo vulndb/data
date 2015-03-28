@@ -9,7 +9,7 @@
     "steal data,\nor use the additional functionality of the database server", 
     "to take control of\nfurther server components.\n\nThe tool discovered that", 
     "the affected page and parameter are vulnerable. This\ninjection was", 
-    "detected as Arachni was able to inject specific NoSQL queries that\nif", 
+    "detected as the tool was able to inject specific NoSQL queries that\nif", 
     "vulnerable result in the responses for each injection being different.", 
     "This is\nknown as a blind NoSQL injection vulnerability."
   ], 

@@ -14,7 +14,7 @@
     "affected page allows WebDAV access. This was discovered\nas the server", 
     "allowed several specific methods that are specific to WebDAV", 
     "(`PROPFIND`,\n`PROPPATCH`, etc.), however, further testing should be", 
-    "conducted on the WebDAV\ncomponent specifically as Arachni does support", 
+    "conducted on the WebDAV\ncomponent specifically as the tool does support", 
     "this feature."
   ], 
   "fix": {

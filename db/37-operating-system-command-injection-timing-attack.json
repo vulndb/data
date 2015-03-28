@@ -12,7 +12,7 @@
     "weakness to perform their own arbitrary commands\non the server. This", 
     "can include everything from simple `ping` commands to map the\ninternal", 
     "network, to obtaining full control of the server.\n\nBy injecting OS", 
-    "commands that take a specific amount of time to execute, Arachni\nwas", 
+    "commands that take a specific amount of time to execute, the tool\nwas", 
     "able to detect time based OS command injection. This indicates that", 
     "proper\ninput sanitisation is not occurring."
   ], 

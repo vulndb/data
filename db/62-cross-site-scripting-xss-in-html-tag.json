@@ -17,7 +17,7 @@
     "stored XSS).\n\nThe tool has discovered that it is possible to insert", 
     "content directly into an HTML\ntag. For example `<INJECTION_HERE", 
     "href=.......etc>` where `INJECTION_HERE`\nrepresents the location where", 
-    "the Arachni payload was detected."
+    "the the tool payload was detected."
   ], 
   "fix": {
     "effort": 50, 

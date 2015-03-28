@@ -17,7 +17,7 @@
     "analysing the response, they are able to determine if a web backdoor", 
     "or web\nshell exists. These web backdoors or web shells can then", 
     "provide an easy path\nfor further compromise of the server.\n\nBy", 
-    "utilising the same methods as the cyber-criminals, Arachni was able to", 
+    "utilising the same methods as the cyber-criminals, the tool was able to", 
     "discover a possible web backdoor or web shell."
   ], 
   "fix": {

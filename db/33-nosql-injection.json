@@ -9,7 +9,7 @@
     "steal data,\nor use the additional functionality of the database server", 
     "to take control of\nfurther server components.\n\nThe tool discovered that", 
     "the affected page and parameter are vulnerable. This\ninjection was", 
-    "detected as Arachni was able to discover known error messages within", 
+    "detected as the tool was able to discover known error messages within", 
     "the server's response."
   ], 
   "fix": {
