@@ -17,7 +17,7 @@ are available:
  * [python-sdk](https://github.com/vulndb/python-sdk)
 
 ## Projects using this database
- * Implementation in progress at [w3af](http://www.w3af.org/)
+ * [w3af](http://www.w3af.org/)
  
 ## Contributing
 We would love to receive your [pull-requests](https://help.github.com/articles/using-pull-requests/)!
