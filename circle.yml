@@ -4,9 +4,7 @@
 #   As a user you don't need to understand this file.
 #
 dependencies:
-  pre:
-    - pip install --upgrade -r tests/requirements.txt
-
   post:
+    - pip install --upgrade -r tests/requirements.txt
     - pip --version
     - pip freeze
