@@ -4,29 +4,29 @@
   "severity": "high", 
   "description": [
     "To perform specific actions from within a web application, it is", 
-    "occasionally\nrequired to run Operating System commands and have the", 
-    "output of these commands\ncaptured by the web application and returned", 
+    "occasionally required to run Operating System commands and have the", 
+    "output of these commands captured by the web application and returned", 
     "to the client.\n\nOS command injection occurs when user supplied input", 
-    "is inserted into one of these\ncommands without proper sanitisation and", 
+    "is inserted into one of these commands without proper sanitisation and", 
     "is then executed by the server.\n\nCyber-criminals will abuse this", 
-    "weakness to perform their own arbitrary commands\non the server. This", 
-    "can include everything from simple `ping` commands to map the\ninternal", 
+    "weakness to perform their own arbitrary commands on the server. This", 
+    "can include everything from simple `ping` commands to map the internal", 
     "network, to obtaining full control of the server.\n\nThe tool was able to", 
-    "inject specific Operating System commands and have the output\nfrom", 
+    "inject specific Operating System commands and have the output from", 
     "that command contained within the server response. This indicates that", 
-    "proper\ninput sanitisation is not occurring."
+    "proper input sanitisation is not occurring."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "It is recommended that untrusted data is never used to form a command", 
-      "to be\nexecuted by the OS.\n\nTo validate data, the application should", 
-      "ensure that the supplied value contains\nonly the characters that are", 
+      "to be executed by the OS.\n\nTo validate data, the application should", 
+      "ensure that the supplied value contains only the characters that are", 
       "required to perform the required action.\n\nFor example, where the form", 
-      "field expects an IP address, only numbers and periods\nshould be", 
+      "field expects an IP address, only numbers and periods should be", 
       "accepted. Additionally, all control operators (`&`, `&&`, `|`, `||`,", 
       "`$`, `\\`, `#`) should be explicitly denied and never accepted as valid", 
-      "input by\nthe server."
+      "input by the server."
     ]
   }, 
   "tags": [

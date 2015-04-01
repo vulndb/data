@@ -4,25 +4,25 @@
   "severity": "medium", 
   "description": [
     "The `TRACE` HTTP method allows a client so send a request to the", 
-    "server, and\nhave the same request then send back in the server's", 
-    "response. This allows the\nclient to determine if the server is", 
-    "receiving the request as expected or if\nspecific parts of the request", 
-    "are not arriving as expected.\nFor example incorrect encoding or a load", 
-    "balancer has filtered or changed a value.\nOn many default", 
+    "server, and have the same request then send back in the server's", 
+    "response. This allows the client to determine if the server is", 
+    "receiving the request as expected or if specific parts of the request", 
+    "are not arriving as expected. For example incorrect encoding or a load", 
+    "balancer has filtered or changed a value. On many default", 
     "installations the `TRACE` method is still enabled.\n\nWhile not", 
     "vulnerable by itself, it does provide a method for cyber-criminals to", 
     "bypass the `HTTPOnly` cookie flag, and therefore could allow a XSS", 
-    "attack to\nsuccessfully access a session token.\n\nThe tool has discovered", 
+    "attack to successfully access a session token.\n\nThe tool has discovered", 
     "that the affected page permits the HTTP `TRACE` method."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "The HTTP `TRACE` method is normally not required within production", 
-      "sites and\nshould therefore be disabled.\n\nDepending on the function", 
-      "being performed by the web application, the risk\nlevel can start low", 
+      "sites and should therefore be disabled.\n\nDepending on the function", 
+      "being performed by the web application, the risk level can start low", 
       "and increase as more functionality is implemented.\n\nThe remediation is", 
-      "typically a very simple configuration change and in most cases\nwill", 
+      "typically a very simple configuration change and in most cases will", 
       "not have any negative impact on the server or application."
     ]
   }, 

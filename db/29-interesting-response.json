@@ -4,8 +4,8 @@
   "severity": "informational", 
   "description": [
     "The server responded with a non 200 (OK) nor 404 (Not Found) status", 
-    "code.\nThis is a non-issue, however exotic HTTP response status codes", 
-    "can provide useful\ninsights into the behavior of the web application", 
+    "code. This is a non-issue, however exotic HTTP response status codes", 
+    "can provide useful insights into the behavior of the web application", 
     "and assist with the penetration test."
   ], 
   "fix": {

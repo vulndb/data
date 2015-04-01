@@ -4,28 +4,28 @@
   "severity": "medium", 
   "description": [
     "Credit card numbers are used in applications where a user is able to", 
-    "purchase\ngoods and/or services.\n\nA credit card number is a sensitive", 
-    "piece of information and should be handled\nas such. Cyber-criminals", 
-    "will use various methods to attempt to compromise credit\ncard", 
+    "purchase goods and/or services.\n\nA credit card number is a sensitive", 
+    "piece of information and should be handled as such. Cyber-criminals", 
+    "will use various methods to attempt to compromise credit card", 
     "information that can then be used for fraudulent purposes.\n\nThrough", 
     "the use of regular expressions and CC number format validation,", 
-    "The tool\nwas able to discover a credit card number located within the", 
+    "The tool was able to discover a credit card number located within the", 
     "affected page."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "Initially, the credit card number within the response should be", 
-      "checked to ensure\nits validity, as it is possible that the regular", 
-      "expression has matched on a\nsimilar number with no relation to a real", 
+      "checked to ensure its validity, as it is possible that the regular", 
+      "expression has matched on a similar number with no relation to a real", 
       "credit card.\n\nIf the response does contain a valid credit card number,", 
-      "then all efforts should\nbe taken to remove or further protect this", 
-      "information. This can be achieved by\nremoving the credit card number", 
-      "altogether, or by masking the number so that\nonly the last few digits", 
+      "then all efforts should be taken to remove or further protect this", 
+      "information. This can be achieved by removing the credit card number", 
+      "altogether, or by masking the number so that only the last few digits", 
       "are present within the response. (eg. _**********123_).\n\nAdditionally,", 
       "credit card numbers should not be stored by the application, unless", 
       "the organisation also complies with other security controls as", 
-      "outlined in the\nPayment Card Industry Data Security Standard (PCI", 
+      "outlined in the Payment Card Industry Data Security Standard (PCI-", 
       "DSS)."
     ]
   }, 

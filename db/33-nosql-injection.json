@@ -4,11 +4,11 @@
   "severity": "high", 
   "description": [
     "A NoSQL injection occurs when a value originating from the client's", 
-    "request is\nused within a NoSQL call without prior sanitisation.\n\nThis", 
+    "request is used within a NoSQL call without prior sanitisation.\n\nThis", 
     "can allow cyber-criminals to execute arbitrary NoSQL code and thus", 
-    "steal data,\nor use the additional functionality of the database server", 
-    "to take control of\nfurther server components.\n\nThe tool discovered that", 
-    "the affected page and parameter are vulnerable. This\ninjection was", 
+    "steal data, or use the additional functionality of the database server", 
+    "to take control of further server components.\n\nThe tool discovered that", 
+    "the affected page and parameter are vulnerable. This injection was", 
     "detected as the tool was able to discover known error messages within", 
     "the server's response."
   ], 
@@ -16,8 +16,8 @@
     "effort": 50, 
     "guidance": [
       "The most effective remediation against NoSQL injection attacks is to", 
-      "ensure that\nNoSQL API calls are not constructed via string", 
-      "concatenation that includes\nunsanitized data.\n\nSanitization is best", 
+      "ensure that NoSQL API calls are not constructed via string", 
+      "concatenation that includes unsanitized data.\n\nSanitization is best", 
       "achieved using existing escaping libraries."
     ]
   }, 

@@ -4,30 +4,30 @@
   "severity": "medium", 
   "description": [
     "The HTTP protocol by itself is clear text, meaning that any data that", 
-    "is\ntransmitted via HTTP can be captured and the contents viewed. To", 
-    "keep data\nprivate and prevent it from being intercepted, HTTP is often", 
-    "tunnelled through\neither Secure Sockets Layer (SSL) or Transport Layer", 
-    "Security (TLS).\nWhen either of these encryption standards are used, it", 
+    "is transmitted via HTTP can be captured and the contents viewed. To", 
+    "keep data private and prevent it from being intercepted, HTTP is often", 
+    "tunnelled through either Secure Sockets Layer (SSL) or Transport Layer", 
+    "Security (TLS). When either of these encryption standards are used, it", 
     "is referred to as HTTPS.\n\nHTTP Strict Transport Security (HSTS) is an", 
-    "optional response header that can be\nconfigured on the server to", 
-    "instruct the browser to only communicate via HTTPS.\nThis will be", 
-    "enforced by the browser even if the user requests a HTTP resource\non", 
+    "optional response header that can be configured on the server to", 
+    "instruct the browser to only communicate via HTTPS. This will be", 
+    "enforced by the browser even if the user requests a HTTP resource on", 
     "the same server.\n\nCyber-criminals will often attempt to compromise", 
-    "sensitive information passed\nfrom the client to the server using HTTP.", 
-    "This can be conducted via various\nMan-in-The-Middle (MiTM) attacks or", 
+    "sensitive information passed from the client to the server using HTTP.", 
+    "This can be conducted via various Man-in-The-Middle (MiTM) attacks or", 
     "through network packet captures.\n\nThe tool discovered that the affected", 
-    "application is using HTTPS however does not\nuse the HSTS header."
+    "application is using HTTPS however does not use the HSTS header."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "Depending on the framework being used the implementation methods will", 
-      "vary,\nhowever it is advised that the `Strict-Transport-Security`", 
-      "header be configured\non the server.\n\nOne of the options for this", 
-      "header is `max-age`, which is a representation (in\nmilliseconds)", 
-      "determining the time in which the client's browser will adhere to\nthe", 
+      "vary, however it is advised that the `Strict-Transport-Security`", 
+      "header be configured on the server.\n\nOne of the options for this", 
+      "header is `max-age`, which is a representation (in milliseconds)", 
+      "determining the time in which the client's browser will adhere to the", 
       "header policy.\n\nDepending on the environment and the application this", 
-      "time period could be from\nas low as minutes to as long as days."
+      "time period could be from as low as minutes to as long as days."
     ]
   }, 
   "references": [

@@ -4,19 +4,19 @@
   "severity": "informational", 
   "description": [
     "Email addresses are typically found on \"Contact us\" pages, however,", 
-    "they can also\nbe found within scripts or code comments of the", 
-    "application. They are used to\nprovide a legitimate means of contacting", 
+    "they can also be found within scripts or code comments of the", 
+    "application. They are used to provide a legitimate means of contacting", 
     "an organisation.\n\nAs one of the initial steps in information", 
-    "gathering, cyber-criminals will spider\na website and using automated", 
-    "methods collect as many email addresses as possible,\nthat they may", 
+    "gathering, cyber-criminals will spider a website and using automated", 
+    "methods collect as many email addresses as possible, that they may", 
     "then use in a social engineering attack.\n\nUsing the same automated", 
-    "methods, the tool was able to detect one or more email\naddresses that", 
+    "methods, the tool was able to detect one or more email addresses that", 
     "were stored within the affected page."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
-      "E-mail addresses should be presented in such\n                    a way", 
+      "E-mail addresses should be presented in such                     a way", 
       "that it is hard to process them automatically."
     ]
   }

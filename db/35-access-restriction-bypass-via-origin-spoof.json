@@ -4,25 +4,25 @@
   "severity": "high", 
   "description": [
     "Origin headers are utilised by proxies and/or load balancers to track", 
-    "the\noriginating IP address of the client.\n\nAs the request progresses", 
-    "through a proxy, the origin header is added to the\nexisting headers,", 
+    "the originating IP address of the client.\n\nAs the request progresses", 
+    "through a proxy, the origin header is added to the existing headers,", 
     "and the value of the client's IP is then set within this header.", 
     "Occasionally, poorly implemented access restrictions are based off of", 
-    "the\noriginating IP address alone.\n\nFor example, any public IP address", 
-    "may be forced to authenticate, while an\ninternal IP address may not.", 
+    "the originating IP address alone.\n\nFor example, any public IP address", 
+    "may be forced to authenticate, while an internal IP address may not.", 
     "Because this header can also be set by the client, it allows", 
-    "cyber-criminals to\nspoof their IP address and potentially gain access", 
+    "cyber-criminals to spoof their IP address and potentially gain access", 
     "to restricted pages.\n\nThe tool discovered a resource that it did not", 
-    "have permission to access, but been\ngranted access after spoofing the", 
-    "address of localhost (127.0.0.1), thus bypassing\nany requirement to", 
+    "have permission to access, but been granted access after spoofing the", 
+    "address of localhost (127.0.0.1), thus bypassing any requirement to", 
     "authenticate."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "Remediation actions may be vastly different depending on the framework", 
-      "being used,\nand how the application has been coded. However, the", 
-      "origin header should never\nbe used to validate a client's access as it", 
+      "being used, and how the application has been coded. However, the", 
+      "origin header should never be used to validate a client's access as it", 
       "is trivial to change."
     ]
   }, 

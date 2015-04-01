@@ -4,12 +4,12 @@
   "severity": "informational", 
   "description": [
     "There are a number of HTTP methods that can be used on a webserver", 
-    "(`OPTIONS`,\n`HEAD`, `GET`, `POST`, `PUT`, `DELETE` etc.).  Each of", 
-    "these methods perform a\ndifferent function and each have an associated", 
-    "level of risk when their use is\npermitted on the webserver.\n\nA client", 
+    "(`OPTIONS`, `HEAD`, `GET`, `POST`, `PUT`, `DELETE` etc.).  Each of", 
+    "these methods perform a different function and each have an associated", 
+    "level of risk when their use is permitted on the webserver.\n\nA client", 
     "can use the `OPTIONS` method within a request to query a server to", 
     "determine which methods are allowed.\n\nCyber-criminals will almost", 
-    "always perform this simple test as it will give a\nvery quick", 
+    "always perform this simple test as it will give a very quick", 
     "indication of any high-risk methods being permitted by the server.", 
     "The tool discovered that several methods are supported by the server."
   ], 
@@ -17,13 +17,13 @@
     "effort": 50, 
     "guidance": [
       "It is recommended that a whitelisting approach be taken to explicitly", 
-      "permit the\nHTTP methods required by the application and block all", 
+      "permit the HTTP methods required by the application and block all", 
       "others.\n\nTypically the only HTTP methods required for most", 
-      "applications are `GET` and\n`POST`. All other methods perform actions", 
-      "that are rarely required or perform\nactions that are inherently risky.", 
+      "applications are `GET` and `POST`. All other methods perform actions", 
+      "that are rarely required or perform actions that are inherently risky.", 
       "These risky methods (such as `PUT`, `DELETE`, etc) should be protected", 
-      "by strict\nlimitations, such as ensuring that the channel is secure", 
-      "(SSL/TLS enabled) and\nonly authorised and trusted clients are", 
+      "by strict limitations, such as ensuring that the channel is secure", 
+      "(SSL/TLS enabled) and only authorised and trusted clients are", 
       "permitted to use them."
     ]
   }, 

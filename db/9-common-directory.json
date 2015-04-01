@@ -5,14 +5,14 @@
   "description": [
     "Web applications are often made up of multiple files and directories.", 
     "It is possible that over time some directories may become unreferenced", 
-    "(unused)\nby the web application and forgotten about by the", 
-    "administrator/developer.\nBecause web applications are built using", 
-    "common frameworks, they contain common\ndirectories that can be", 
+    "(unused) by the web application and forgotten about by the", 
+    "administrator/developer. Because web applications are built using", 
+    "common frameworks, they contain common directories that can be", 
     "discovered (independent of server).\n\nDuring the initial recon stages", 
-    "of an attack, cyber-criminals will attempt to\nlocate unreferenced", 
+    "of an attack, cyber-criminals will attempt to locate unreferenced", 
     "directories in the hope that the directory will assist in further", 
-    "compromise of the web application.\nTo achieve this they will make", 
-    "thousands of requests using word lists containing\ncommon names.\nThe", 
+    "compromise of the web application. To achieve this they will make", 
+    "thousands of requests using word lists containing common names. The", 
     "response headers from the server will then indicate if the directory", 
     "exists.\n\nThe tool also contains a list of common directory names which", 
     "it will attempt to access."
@@ -21,11 +21,11 @@
     "effort": 50, 
     "guidance": [
       "If directories are unreferenced then they should be removed from the", 
-      "web root\nand/or the application directory.\n\nPreventing access without", 
-      "authentication may also be an option and can stop a\nclient from being", 
-      "able to view the contents of a file, however it is still likely\nthat", 
+      "web root and/or the application directory.\n\nPreventing access without", 
+      "authentication may also be an option and can stop a client from being", 
+      "able to view the contents of a file, however it is still likely that", 
       "the directory structure will be able to be discovered.\n\nUsing obscure", 
-      "directory names is implementing security through obscurity and is\nnot", 
+      "directory names is implementing security through obscurity and is not", 
       "a recommended option."
     ]
   }, 

@@ -4,23 +4,23 @@
   "severity": "low", 
   "description": [
     "Private, or non-routable, IP addresses are generally used within a", 
-    "home or\ncompany network and are typically unknown to anyone outside of", 
+    "home or company network and are typically unknown to anyone outside of", 
     "that network.\n\nCyber-criminals will attempt to identify the private IP", 
-    "address range being used\nby their victim, to aid in collecting further", 
-    "information that could then lead\nto a possible compromise.\n\nThe tool", 
+    "address range being used by their victim, to aid in collecting further", 
+    "information that could then lead to a possible compromise.\n\nThe tool", 
     "discovered that the affected page returned a RFC 1918 compliant", 
-    "private\nIP address and therefore could be revealing sensitive", 
+    "private IP address and therefore could be revealing sensitive", 
     "information.\n\n_This finding typically requires manual verification to", 
-    "ensure the context is\ncorrect, as any private IP address within the", 
+    "ensure the context is correct, as any private IP address within the", 
     "HTML body will trigger it."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "Identifying the context in which the affected page displays a Private", 
-      "IP\naddress is necessary.\n\nIf the page is publicly accessible and", 
-      "displays the Private IP of the affected\nserver (or supporting", 
-      "infrastructure), then measures should be put in place to\nensure that", 
+      "IP address is necessary.\n\nIf the page is publicly accessible and", 
+      "displays the Private IP of the affected server (or supporting", 
+      "infrastructure), then measures should be put in place to ensure that", 
       "the IP address is removed from any response."
     ]
   }, 

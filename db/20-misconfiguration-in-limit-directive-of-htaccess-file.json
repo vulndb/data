@@ -4,26 +4,26 @@
   "severity": "high", 
   "description": [
     "There are a number of HTTP methods that can be used on a webserver", 
-    "(for example\n`OPTIONS`, `HEAD`, `GET`, `POST`, `PUT`, `DELETE `etc.).", 
+    "(for example `OPTIONS`, `HEAD`, `GET`, `POST`, `PUT`, `DELETE `etc.).", 
     "Each of these methods perform a different function, and each has an", 
-    "associated\nlevel of risk when their use is permitted on the webserver.", 
+    "associated level of risk when their use is permitted on the webserver.", 
     "The `<Limit>` directive within Apache's `.htaccess` file allows", 
-    "administrators\nto define which of the methods they would like to", 
-    "block. However, as this is a\nblacklisting approach, it is inevitable", 
-    "that a server administrator may\naccidentally miss adding certain HTTP", 
-    "methods to be blocked, thus increasing\nthe level of risk to the", 
+    "administrators to define which of the methods they would like to", 
+    "block. However, as this is a blacklisting approach, it is inevitable", 
+    "that a server administrator may accidentally miss adding certain HTTP", 
+    "methods to be blocked, thus increasing the level of risk to the", 
     "application and/or server."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "The preferred configuration is to prevent the use of unauthorised HTTP", 
-      "methods\nby utilising the `<LimitExcept>` directive.\n\nThis directive", 
-      "uses a whitelisting approach to permit HTTP methods while\nblocking all", 
-      "others not listed in the directive, and will therefor block any\nmethod", 
+      "methods by utilising the `<LimitExcept>` directive.\n\nThis directive", 
+      "uses a whitelisting approach to permit HTTP methods while blocking all", 
+      "others not listed in the directive, and will therefor block any method", 
       "tampering attempts.\n\nMost commonly, the only HTTP methods required for", 
-      "most scenarios are `GET` and\n`POST`. An example of permitting these", 
-      "HTTP methods is:\n `<LimitExcept POST GET> require valid-user", 
+      "most scenarios are `GET` and `POST`. An example of permitting these", 
+      "HTTP methods is:  `<LimitExcept POST GET> require valid-user", 
       "</LimitExcept>`"
     ]
   }, 

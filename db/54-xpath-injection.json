@@ -4,30 +4,30 @@
   "severity": "high", 
   "description": [
     "XML Path Language (XPath) queries are used by web applications for", 
-    "selecting\nnodes from XML documents.\nOnce selected, the value of these", 
+    "selecting nodes from XML documents. Once selected, the value of these", 
     "nodes can then be used by the application.\n\nA simple example for the", 
-    "use of XML documents is to store user information. As\npart of the", 
-    "authentication process, the application will perform an XPath query\nto", 
+    "use of XML documents is to store user information. As part of the", 
+    "authentication process, the application will perform an XPath query to", 
     "confirm the login credentials and retrieve that user's information to", 
-    "use in\nthe following request.\n\nXPath injection occurs where untrusted", 
+    "use in the following request.\n\nXPath injection occurs where untrusted", 
     "data is used to build XPath queries.\n\nCyber-criminals may abuse this", 
-    "injection vulnerability to bypass authentication,\nquery other user's", 
+    "injection vulnerability to bypass authentication, query other user's", 
     "information, or, if the XML document contains privileged user", 
     "credentials, allow the cyber-criminal to escalate their privileges.", 
     "The tool injected special XPath query characters into the page and", 
-    "based on the\nresponses from the server, has determined that the page", 
+    "based on the responses from the server, has determined that the page", 
     "is vulnerable to XPath injection."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "The preferred way to protect against XPath injection is to utilise", 
-      "parameterized\n(also known as prepared) XPath queries.\nWhen utilising", 
+      "parameterized (also known as prepared) XPath queries. When utilising", 
       "this method of querying the XML document any value supplied by the", 
       "client will be handled as a string rather than part of the XPath", 
       "query.\n\nAn alternative to parameterized queries it to use precompiled", 
-      "XPath queries.\nPrecompiled XPath queries are not generated dynamically", 
-      "and will therefor never\nprocess user supplied input as XPath."
+      "XPath queries. Precompiled XPath queries are not generated dynamically", 
+      "and will therefor never process user supplied input as XPath."
     ]
   }, 
   "tags": [

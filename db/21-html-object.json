@@ -3,8 +3,8 @@
   "title": "HTML object", 
   "severity": "informational", 
   "description": [
-    "Logs the existence of HTML object tags.\n Since the tool", 
-    "can't execute things like Java Applets and Flash\n this", 
+    "Logs the existence of HTML object tags.  Since the tool", 
+    "can't execute things like Java Applets and Flash  this", 
     "serves as a heads-up to the penetration tester to review", 
     "the objects in question using a different method."
   ], 

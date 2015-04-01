@@ -5,18 +5,18 @@
   "description": [
     "A modern web application will be reliant on several different", 
     "programming languages.\n\nThese languages can be broken up in two", 
-    "flavours. These are client-side languages\n(such as those that run in", 
-    "the browser -- like JavaScript) and server-side\nlanguages (which are", 
-    "executed by the server -- like ASP, PHP, JSP, etc.) to form\nthe", 
+    "flavours. These are client-side languages (such as those that run in", 
+    "the browser -- like JavaScript) and server-side languages (which are", 
+    "executed by the server -- like ASP, PHP, JSP, etc.) to form the", 
     "dynamic pages (client-side code) that are then sent to the client.", 
     "Because all server-side code should be executed by the server, it", 
-    "should only ever\ncome from a trusted source.\n\nCode injection occurs", 
-    "when the server takes untrusted code (ie. from the client)\nand", 
+    "should only ever come from a trusted source.\n\nCode injection occurs", 
+    "when the server takes untrusted code (ie. from the client) and", 
     "executes it.\n\nCyber-criminals will abuse this weakness to execute", 
-    "arbitrary code on the server,\nwhich could result in complete server", 
+    "arbitrary code on the server, which could result in complete server", 
     "compromise.\n\nThe tool was able to inject specific server-side code via", 
-    "a PHP wrapper (`php://input`)\nand have the executed output from the", 
-    "code contained within the server response.\nThis indicates that proper", 
+    "a PHP wrapper (`php://input`) and have the executed output from the", 
+    "code contained within the server response. This indicates that proper", 
     "input sanitisation is not occurring."
   ], 
   "fix": {
@@ -24,9 +24,9 @@
     "guidance": [
       "It is recommended that untrusted input is never processed as", 
       "server-side code.\n\nTo validate input, the application should ensure", 
-      "that the supplied value contains\nonly the data that are required to", 
+      "that the supplied value contains only the data that are required to", 
       "perform the relevant action.\n\nFor example, where a username is", 
-      "required, then no non-alpha characters should not\nbe accepted."
+      "required, then no non-alpha characters should not be accepted."
     ]
   }, 
   "tags": [

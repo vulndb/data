@@ -4,28 +4,28 @@
   "severity": "informational", 
   "description": [
     "HTTP by itself is a stateless protocol. Therefore the server is unable", 
-    "to determine\nwhich requests are performed by which client, and which", 
-    "clients are authenticated\nor unauthenticated.\n\nThe use of HTTP cookies", 
-    "within the headers, allows a web server to identify each\nindividual", 
+    "to determine which requests are performed by which client, and which", 
+    "clients are authenticated or unauthenticated.\n\nThe use of HTTP cookies", 
+    "within the headers, allows a web server to identify each individual", 
     "client and can therefore determine which clients hold valid", 
     "authentication, from those that do not. These are known as session", 
     "cookies.\n\nWhen a cookie is set by the server (sent the header of an", 
-    "HTTP response) there\nare several flags that can be set to configure", 
-    "the properties of the cookie and\nhow it is to be handled by the", 
+    "HTTP response) there are several flags that can be set to configure", 
+    "the properties of the cookie and how it is to be handled by the", 
     "browser.\n\nThe `HttpOnly` flag assists in the prevention of client", 
-    "side-scripts (such as\nJavaScript) accessing and using the cookie.", 
+    "side-scripts (such as JavaScript) accessing and using the cookie.", 
     "This can help prevent XSS attacks targeting the cookies holding the", 
-    "client's\nsession token (setting the `HttpOnly` flag does not prevent,", 
-    "nor safeguard against\nXSS vulnerabilities themselves)."
+    "client's session token (setting the `HttpOnly` flag does not prevent,", 
+    "nor safeguard against XSS vulnerabilities themselves)."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "The initial step to remedy this would be to determine whether any", 
-      "client-side\nscripts (such as JavaScript) need to access the cookie and", 
-      "if not, set the\n`HttpOnly` flag.\n\nAdditionally, it should be noted", 
-      "that some older browsers are not compatible with\nthe `HttpOnly` flag,", 
-      "and therefore setting this flag will not protect those clients\nagainst", 
+      "client-side scripts (such as JavaScript) need to access the cookie and", 
+      "if not, set the `HttpOnly` flag.\n\nAdditionally, it should be noted", 
+      "that some older browsers are not compatible with the `HttpOnly` flag,", 
+      "and therefore setting this flag will not protect those clients against", 
       "this form of attack."
     ]
   }, 

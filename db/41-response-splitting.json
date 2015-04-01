@@ -4,23 +4,23 @@
   "severity": "medium", 
   "description": [
     "HTTP response splitting occurs when untrusted data is inserted into", 
-    "the response\nheaders without any sanitisation.\n\nIf successful, this", 
-    "allows cyber-criminals to essentially split the HTTP response\nin two.", 
+    "the response headers without any sanitisation.\n\nIf successful, this", 
+    "allows cyber-criminals to essentially split the HTTP response in two.", 
     "This is abused by cyber-criminals injecting CR (Carriage Return --", 
-    "`/r`)\nand LF (Line Feed -- `\\n`) characters which will then form the", 
-    "split. If the CR\nor LF characters are not processed by the server then", 
+    "`/r`) and LF (Line Feed -- `\ `) characters which will then form the", 
+    "split. If the CR or LF characters are not processed by the server then", 
     "it cannot be exploited.\n\nAlong with these characters, cyber-criminals", 
-    "can then construct their own\narbitrary response headers and body which", 
-    "would then form the second response.\nThe second response is entirely", 
-    "under their control, allowing for a number of\nother attacks."
+    "can then construct their own arbitrary response headers and body which", 
+    "would then form the second response. The second response is entirely", 
+    "under their control, allowing for a number of other attacks."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "It is recommended that untrusted data is never used to form the", 
-      "contents of the\nresponse header.\n\nWhere any untrusted source is", 
-      "required to be used in the response headers, it is\nimportant to ensure", 
-      "that any hazardous characters (`/r`, `/n` and potentially\nothers) are", 
+      "contents of the response header.\n\nWhere any untrusted source is", 
+      "required to be used in the response headers, it is important to ensure", 
+      "that any hazardous characters (`/r`, `/n` and potentially others) are", 
       "sanitised prior to being used.\n\nThis is especially important when", 
       "setting cookie values, redirecting, etc.."
     ]

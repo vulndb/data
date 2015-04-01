@@ -4,26 +4,26 @@
   "severity": "medium", 
   "description": [
     "Web applications occasionally use DOM input values to store the", 
-    "address of the\npage to which the client will be redirected -- for", 
-    "example:\n`yoursite.com/#/?redirect=www.yoursite.com/404.asp`\n\nAn", 
+    "address of the page to which the client will be redirected -- for", 
+    "example: `yoursite.com/#/?redirect=www.yoursite.com/404.asp`\n\nAn", 
     "unvalidated redirect occurs when the client is able to modify the", 
-    "affected\nparameter value and thus control the location of the", 
-    "redirection.\nFor example, the following URL", 
-    "`yoursite.com/#/?redirect=www.anothersite.com`\nwill redirect to", 
+    "affected parameter value and thus control the location of the", 
+    "redirection. For example, the following URL", 
+    "`yoursite.com/#/?redirect=www.anothersite.com` will redirect to", 
     "`www.anothersite.com`.\n\nCyber-criminals will abuse these", 
-    "vulnerabilities in social engineering attacks\nto get users to", 
+    "vulnerabilities in social engineering attacks to get users to", 
     "unknowingly visit malicious web sites.\n\nThe tool has discovered that", 
-    "the web page does not validate the parameter value prior\nto", 
+    "the web page does not validate the parameter value prior to", 
     "redirecting the client to the injected value."
   ], 
   "fix": {
     "effort": 50, 
     "guidance": [
       "The application should ensure that the supplied value for a redirect", 
-      "is permitted.\nThis can be achieved by performing whitelisting on the", 
+      "is permitted. This can be achieved by performing whitelisting on the", 
       "parameter value.\n\nThe whitelist should contain a list of pages or", 
-      "sites that the application is\npermitted to redirect users to. If the", 
-      "supplied value does not match any value\nin the whitelist then the", 
+      "sites that the application is permitted to redirect users to. If the", 
+      "supplied value does not match any value in the whitelist then the", 
       "server should redirect to a standard error page."
     ]
   }, 
