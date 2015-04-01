@@ -1,5 +1,5 @@
 {
-  "id": 55, 
+  "id": 70,
   "title": "Persistent Cross-Site Scripting (XSS)",
   "severity": "high", 
   "description": [
