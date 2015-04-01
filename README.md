@@ -59,3 +59,6 @@ Andres and Tasos.
 
 The initial database information was contributed by the [Arachni scanner](http://www.arachni-scanner.com/)
 imported in [this commit](https://github.com/vulndb/data/commit/e27222af21b0569525718f591eaa2c517d4c1da2). 
+
+## Build status
+[![Circle CI](https://circleci.com/gh/vulndb/data.svg?style=svg)](https://circleci.com/gh/vulndb/data)
