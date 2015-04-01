@@ -5,7 +5,7 @@
   "description": [
     "The HTTP protocol by itself is clear text, meaning that any data that", 
     "is transmitted via HTTP can be captured and the contents viewed. To", 
-    "keep data privateand prevent it from being intercepted, HTTP is often", 
+    "keep data private and prevent it from being intercepted, HTTP is often",
     "tunnelled through either a Secure Sockets Layer (SSL), or Transport", 
     "Layer Security (TLS) connection. When either of these encryption", 
     "standards are used, it is referred to as HTTPS.\n\nCyber-criminals will", 
