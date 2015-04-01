@@ -1,0 +1,42 @@
+{
+  "id": 71,
+  "title": "Reflected File Download",
+  "severity": "medium",
+  "description": [
+    "The reflected file download vulnerability is an application weakness",
+    "which allows a cyber-criminal to perform advanced social engineering",
+    "attacks where an arbitrary executable file is downloaded by the user from",
+    "vulnerable site. The contents of the executable file are controlled by",
+    "the attacker and are never uploaded to the vulnerable site.",
+    "\n\n",
+    "This vulnerability, like many other Web attacks, begins by sending a",
+    "malicious link to a victim. Unlike other attacks the exploitation finishes",
+    "outside of the browser context:",
+    "\n\n",
+    " 1. The user follows a malicious link to a trusted web site\n",
+    " 2. An executable file is downloaded and saved on the user's machine.",
+    "All security indicators show that the file is 'hosted' on the trusted web",
+    "site\n",
+    " 3. The user executes the file which contains shell commands that gain",
+    "complete control over the computer."
+  ],
+  "fix": {
+    "effort": 10,
+    "guidance": [
+      " 1- Explicitly set the `filename` attribute in the Content-disposition",
+      "HTTP response header.\n",
+      " 2- Perform strict whitelist validation on user input before using it",
+      "in the creation of HTTP response bodies\n"
+    ]
+  }, 
+  "tags": [
+    "rfd",
+    "reflected"
+  ],
+  "references": [
+    {
+      "url": "https://www.trustwave.com/Resources/SpiderLabs-Blog/Reflected-File-Download---A-New-Web-Attack-Vector/",
+      "title": "Reflected File Download - A New Web Attack Vector"
+    }
+  ]
+}
