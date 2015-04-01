@@ -1,0 +1,30 @@
+{
+  "id": 67,
+  "title": "Self-signed TLS/SSL certificate",
+  "severity": "medium", 
+  "description": [
+    "The server's TLS/SSL certificate is self-signed. Self-signed",
+    "certificates are not trusted by browsers and other HTTP clients,",
+    "especially because TLS/SSL man-in-the-middle attacks typically use",
+    "self-signed certificates to eavesdrop on TLS/SSL connections."
+  ], 
+  "fix": {
+    "effort": 60,
+    "guidance": [
+      "Create a new TLS/SSL certificate, request a trusted certificate",
+      "authority (CA) to sign it and replace the self-signed certificate with",
+      "the newly generated one."
+    ]
+  }, 
+  "tags": [
+    "unencrypted", 
+    "tls",
+    "ssl"
+  ],
+  "references": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Self-signed_certificate",
+      "title": "Wikipedia article on self-signed certificates"
+    }
+  ]
+}

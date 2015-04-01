@@ -1,0 +1,35 @@
+{
+  "id": 66,
+  "title": "Insecure SSL version enabled",
+  "severity": "medium", 
+  "description": [
+    "The server accepts SSL connections which use the insecure SSLv2",
+    "protocol. SSLv2 is an old implementation of the Secure Sockets Layer",
+    "protocol which suffers from a number of security flaws allowing attackers",
+    "to capture and alter information passed between a client and the server.",
+    "\n\n",
+    "SSLv2 has been deprecated and is no longer recommended. Note that",
+    "neither SSLv2 nor SSLv3 meet the U.S. FIPS 140-2 standard, which governs",
+    "cryptographic modules for use in federal information systems. Only the",
+    "newer TLS (Transport Layer Security) protocol meets FIPS 140-2",
+    "requirements."
+  ],
+  "fix": {
+    "effort": 10,
+    "guidance": [
+      "Change the web server configuration in order to disable SSLv2"
+    ]
+  }, 
+  "tags": [
+    "ssl"
+  ],
+  "owasp_top_10": {
+        "2010": [9]
+  },
+  "references": [
+    {
+      "url": "https://support.microsoft.com/en-us/kb/187498",
+      "title": "How to Disable SSL 2.0 in IIS"
+    }
+  ]
+}
