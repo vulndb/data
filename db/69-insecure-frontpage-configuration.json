@@ -1,0 +1,32 @@
+{
+  "id": 69,
+  "title": "Insecure Frontpage extensions configuration",
+  "severity": "high",
+  "description": [
+    "Incorrect permissions and/or missing authentication were discovered on",
+    "FrontPage extensions used for publishing content.",
+    "\n\n",
+    "A cyber-criminal might use this vulnerability to deface web sites and",
+    "potentially gain remote code execution on the server."
+  ],
+  "fix": {
+    "effort": 10,
+    "guidance": [
+      " 1. Change the permissions on directories and files accessible via IIS\n",
+      " 2. Setup authentication and authorization for FrontPage extension access"
+    ]
+  }, 
+  "tags": [
+    "windows",
+    "frontpage"
+  ],
+  "owasp_top_10": {
+        "2013": [5]
+  },
+  "references": [
+    {
+      "url": "https://msdn.microsoft.com/en-us/library/bb742372.aspx",
+      "title": "Configuring FrontPage Server Extensions"
+    }
+  ]
+}
