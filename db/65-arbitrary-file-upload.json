@@ -1,21 +1,22 @@
 {
-  "id": 18, 
-  "title": "Form-based File Upload", 
-  "severity": "informational", 
+  "id": 65, 
+  "title": "Unrestricted file upload",
+  "severity": "high",
   "description": [
-    "The design of many web applications require that users be able to", 
-    "upload files that will either be stored or processed by the receiving", 
-    "web server.\n\nThe tool has flagged this not as a vulnerability, but as a", 
-    "prompt for the penetration tester to conduct further manual testing on", 
-    "the file upload function.\n\nAn insecure form-based file upload could", 
-    "allow a cyber-criminal a means to abuse and successfully exploit the", 
-    "server directly, and/or any third party that may later access the", 
-    "file. This can occur through uploading a file containing server", 
-    "side-code (such as PHP) that is then executed when requested by the", 
-    "client."
-  ], 
+    "Many web applications allow users to upload files that will either be",
+    "stored or processed by the receiving web server.",
+    "\n\n",
+    "It was possible to identify a form which allows files with arbitrary",
+    "content and extension to be uploaded to the remote server, and then",
+    "stores the uploaded file to a guessable path in the server's web root.",
+    "\n\n",
+    "This could be used by a cyber-criminal to host content from the vulnerable",
+    "server for phishing and Cross-Site Scripting attacks. In cases where the",
+    "server is configured to execute scripts (PHP, Ruby, etc.) this",
+    "vulnerability can be used to gain remote code execution on the server."
+  ],
   "fix": {
-    "effort": 50, 
+    "effort": 10,
     "guidance": [
       "The identified form handler should at a minimum:",
       "\n\n",
