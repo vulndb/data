@@ -37,19 +37,19 @@
   "references": [
     {
       "url": "http://docs.python.org/py3k/library/functions.html#eval", 
-      "title": "Python"
+      "title": "Python eval documentation"
     }, 
     {
       "url": "http://www.aspdev.org/asp/asp-eval-execute/", 
-      "title": "ASP"
+      "title": "ASP eval documentation"
     }, 
     {
       "url": "http://php.net/manual/en/function.eval.php", 
-      "title": "PHP"
+      "title": "PHP eval documentation"
     }, 
     {
       "url": "http://perldoc.perl.org/functions/eval.html", 
-      "title": "Perl"
+      "title": "Perl eval documentation"
     }
   ]
 }

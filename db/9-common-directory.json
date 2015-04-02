@@ -38,11 +38,11 @@
   "references": [
     {
       "url": "http://cwe.mitre.org/data/definitions/538.html", 
-      "title": "CWE"
+      "title": "CWE-538"
     }, 
     {
       "url": "https://www.owasp.org/index.php/Forced_browsing", 
-      "title": "OWASP"
+      "title": "OWASP - Forced browsing"
     }
   ]
 }

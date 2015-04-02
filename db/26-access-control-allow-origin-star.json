@@ -1,0 +1,44 @@
+{
+  "id": 26, 
+  "title": "Access-Control-Allow-Origin header set to '*'",
+  "severity": "medium",
+  "description": [
+      "Cross-Origin Resource Sharing (CORS) is one of the new HTML5",
+      "technologies which is widely implemented to create Web2.0 applications.",
+      "CORS allows the browser to perform HTTP requests to a domain outside",
+      "the Same-Origin Policy and access the response body. This feature is",
+      "secured by a new set of HTTP headers, being `Access-Control-Allow-Origin`",
+      "one of the most important ones.",
+      "\n\n",
+      "It was possible to identify an HTTP response which contained the",
+      "`Access-Control-Allow-Origin` header value set to '*', which allows any",
+      "third-party domain to perform requests and read the responses.",
+      "While this configuration is not a vulnerability per-se, it's only",
+      "recommended for sites which provide information that's public such as",
+      "weather or stock prices."
+  ],
+  "fix": {
+    "effort": 50, 
+    "guidance": [
+        "All CORS requests include the `Origin` header which indicates",
+        "the source domain name. Create a server-side list of trusted",
+        "domains which can consume the CORS resources and when a request is",
+        "received set the `Access-Control-Allow-Origin` response header",
+        "to the right value from the list matching the `Origin` request header."
+    ]
+  }, 
+  "references": [
+    {
+      "url": "https://www.owasp.org/index.php/CORS_OriginHeaderScrutiny", 
+      "title": "CORS security"
+    },
+    {
+      "url": "http://www.w3.org/TR/cors/",
+      "title": "CORS W3C Specification"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cross-origin_resource_sharing",
+      "title": "CORS article at Wikipedia"
+    }
+  ]
+}
