@@ -5,6 +5,6 @@
 #
 dependencies:
   post:
-    - pip install --upgrade -r tests/requirements.txt
+    - sudo pip install --upgrade -r tests/requirements.txt
     - pip --version
     - pip freeze
