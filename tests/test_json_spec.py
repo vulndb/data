@@ -94,7 +94,7 @@ class TestAllFilesHaveValidSpec(unittest.TestCase):
             json_id = json_data['id']
 
             db_file = os.path.split(db_path_file)[1]
-            
+
             if not db_file.startswith('%s-' % json_id):
                 invalid.append(db_file)
 
