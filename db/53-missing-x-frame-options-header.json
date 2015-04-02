@@ -22,15 +22,15 @@
   "references": [
     {
       "url": "http://tools.ietf.org/html/rfc7034", 
-      "title": "RFC"
+      "title": "RFC-7034"
     }, 
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/X-Frame-Options", 
-      "title": "MDN"
+      "title": "Mozilla developer network"
     }, 
     {
       "url": "https://www.owasp.org/index.php/Clickjacking", 
-      "title": "OWASP"
+      "title": "OWASP Clickjacking document"
     }
   ]
 }

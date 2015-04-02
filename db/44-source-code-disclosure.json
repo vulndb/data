@@ -46,7 +46,7 @@
   "references": [
     {
       "url": "http://cwe.mitre.org/data/definitions/540.html", 
-      "title": "CWE"
+      "title": "CWE-540"
     }
   ]
 }

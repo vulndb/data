@@ -29,7 +29,7 @@
   "references": [
     {
       "url": "http://cwe.mitre.org/data/definitions/200.html", 
-      "title": "CWE"
+      "title": "CWE-200"
     }
   ]
 }

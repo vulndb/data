@@ -43,7 +43,7 @@
     }, 
     {
       "url": "http://cwe.mitre.org/data/definitions/548.html", 
-      "title": "CWE"
+      "title": "CWE-548"
     }
   ]
 }
