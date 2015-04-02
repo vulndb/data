@@ -3,13 +3,16 @@
   "title": "HTML object", 
   "severity": "informational", 
   "description": [
-    "Logs the existence of HTML object tags.  Since the tool", 
-    "can't execute things like Java Applets and Flash  this", 
-    "serves as a heads-up to the penetration tester to review", 
+    "Most automated tools are not able to analyze the security of client-side",
+    "technologies such as Flash and Java applets. This informational finding",
+    "serves as a heads-up to the information security specialist to review",
     "the objects in question using a different method."
   ], 
   "fix": {
-    "effort": 50, 
-    "guidance": ""
+    "effort": 120,
+    "guidance": [
+        "Analyze the objects using manual analysis techniques such as",
+        "a local proxy, decompilation or reverse engineering."
+        ]
   }
 }
