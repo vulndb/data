@@ -21,9 +21,14 @@ class TestAllFilesHaveValidSpec(unittest.TestCase):
         else:
             return ' '.join(data)
 
+    def setUp(self):
+        DBVuln.DB_PATH = 'db'
+
     def url_is_404(self, session, url):
         try:
             response = session.get(url)
+        except KeyboardInterrupt:
+            raise
         except:
             return True
         else:
@@ -77,5 +82,20 @@ class TestAllFilesHaveValidSpec(unittest.TestCase):
         for url in all_urls:
             if self.url_is_404(session, url):
                 invalid.append(url)
+
+        self.assertEqual(invalid, [])
+
+    def test_id_match(self):
+        invalid = []
+
+        for vuln_id in DBVuln.get_all_db_ids():
+            db_path_file = DBVuln.get_file_for_id(vuln_id)
+            json_data = json.loads(file(db_path_file).read())
+            json_id = json_data['id']
+
+            db_file = os.path.split(db_path_file)[1]
+            
+            if not db_file.startswith('%s-' % json_id):
+                invalid.append(db_file)
 
         self.assertEqual(invalid, [])
