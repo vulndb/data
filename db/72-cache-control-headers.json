@@ -1,0 +1,27 @@
+{
+  "id": 72,
+  "title": "Insecure or no Cache-Control header",
+  "severity": "low",
+  "description": [
+    "The `cache-control` and `pragma` HTTP header have not been set properly",
+    "allowing the browser and proxies to cache the HTTP response."
+  ],
+  "fix": {
+    "effort": 10,
+    "guidance": [
+      "Ensure that the `Cache-control` HTTP response header is set to",
+      "`no-cache, no-store` and the `Pragma` header must be set to `no-cache`."
+    ]
+  }, 
+  "tags": [
+    "browser",
+    "cache",
+    "session"
+  ],
+  "references": [
+    {
+      "url": "https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Web_Content_Caching",
+      "title": "Session Management Cheat Sheet"
+    }
+  ]
+}
