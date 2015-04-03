@@ -1,0 +1,40 @@
+{
+  "id": 73,
+  "title": "Application error message",
+  "severity": "low",
+  "description": [
+    "Information Leakage is an application weakness where an application",
+    "reveals sensitive data, such as technical details of the web application,",
+    "environment, or user-specific data. Sensitive data may be used by an",
+    "attacker to exploit the target web application, its hosting network,",
+    "or its users.",
+    "\n\n",
+    "In its most common form, information leakage is the result of one or more",
+    "of the following conditions:\n",
+    " * A failure to scrub out HTML/Script comments containing sensitive",
+    "information\n",
+    " * Improper application or server configurations\n",
+    " * Improper application error handling\n"
+  ],
+  "fix": {
+    "effort": 60,
+    "guidance": [
+      " * Ensure that the application source handles exceptions and errors in",
+      "a such a way that no sensitive information is disclosed to the users\n",
+      " * Configure the application server to handle and log any exceptions",
+      "that the application might yield\n"
+    ]
+  },
+  "cwe": ["200"],
+  "tags": [
+    "web",
+    "error",
+    "information leak"
+  ],
+  "references": [
+    {
+      "url": "http://projects.webappsec.org/w/page/13246936/Information%20Leakage",
+      "title": "WASC threat classification"
+    }
+  ]
+}
