@@ -34,8 +34,7 @@
     "xpath", 
     "database", 
     "error", 
-    "injection", 
-    "regexp"
+    "injection"
   ], 
   "references": [
     {

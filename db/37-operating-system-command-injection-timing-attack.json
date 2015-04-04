@@ -33,8 +33,7 @@
     "os", 
     "command", 
     "code", 
-    "injection", 
-    "timing", 
+    "injection",
     "blind"
   ], 
   "references": [

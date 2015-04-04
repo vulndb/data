@@ -38,8 +38,7 @@
     "file", 
     "inclusion", 
     "error", 
-    "injection", 
-    "regexp"
+    "injection"
   ], 
   "references": [
     {

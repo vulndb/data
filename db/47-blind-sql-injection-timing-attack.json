@@ -40,8 +40,7 @@
   }, 
   "tags": [
     "sql", 
-    "blind", 
-    "timing", 
+    "blind",
     "injection", 
     "database"
   ], 

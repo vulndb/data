@@ -42,8 +42,7 @@
     "remote", 
     "file", 
     "inclusion", 
-    "injection", 
-    "regexp"
+    "injection"
   ], 
   "references": [
     {

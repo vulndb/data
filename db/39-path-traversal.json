@@ -45,8 +45,7 @@
   "tags": [
     "path", 
     "traversal", 
-    "injection", 
-    "regexp"
+    "injection"
   ], 
   "references": [
     {

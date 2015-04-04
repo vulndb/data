@@ -42,7 +42,6 @@
   }, 
   "tags": [
     "csrf", 
-    "rdiff", 
     "form", 
     "token"
   ], 

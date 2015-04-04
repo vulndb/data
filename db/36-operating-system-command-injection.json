@@ -33,8 +33,7 @@
     "os", 
     "command", 
     "code", 
-    "injection", 
-    "regexp", 
+    "injection",
     "error"
   ], 
   "references": [

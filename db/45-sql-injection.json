@@ -39,7 +39,6 @@
   "tags": [
     "sql", 
     "injection", 
-    "regexp", 
     "database", 
     "error"
   ], 
