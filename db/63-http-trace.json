@@ -26,6 +26,7 @@
       "not have any negative impact on the server or application."
     ]
   }, 
+  "owasp_top_10": {"2013": [5]},
   "tags": [
     "web",
     "xst", 

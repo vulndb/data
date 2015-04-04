@@ -29,7 +29,8 @@
       "required, then no non-alpha characters should not be accepted."
     ]
   }, 
-  "cwe": ["94", "95"],  
+  "cwe": ["94", "95"],
+  "owasp_top_10": {"2013": [1]},
   "tags": [
     "web",
     "code", 

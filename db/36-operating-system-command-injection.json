@@ -30,7 +30,8 @@
       "input by the server."
     ]
   }, 
-  "cwe": ["78"],  
+  "cwe": ["78"],
+  "owasp_top_10": {"2013": [1]},
   "tags": [
     "web",
     "os", 

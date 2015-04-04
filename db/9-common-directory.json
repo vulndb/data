@@ -18,6 +18,7 @@
     "it will attempt to access."
   ], 
   "cwe": ["538"],
+  "owasp_top_10": {"2013": [5]},
   "fix": {
     "effort": 50, 
     "guidance": [

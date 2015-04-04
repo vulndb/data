@@ -16,7 +16,8 @@
     "arbitrary code on the server, which could result in complete server", 
     "compromise."
   ], 
-  "cwe": ["95"],  
+  "cwe": ["95"],
+  "owasp_top_10": {"2013": [1]},
   "fix": {
     "effort": 50, 
     "guidance": [

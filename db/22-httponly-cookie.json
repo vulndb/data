@@ -30,6 +30,7 @@
     ]
   },
   "cwe": ["87"],
+  "owasp_top_10": {"2013": [2]},
   "references": [
     {
       "url": "https://www.owasp.org/index.php/HttpOnly", 

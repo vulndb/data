@@ -25,6 +25,7 @@
     ]
   }, 
   "cwe": ["200"],
+  "owasp_top_10": {"2013": [6]},
   "references": [
     {
       "url": "http://projects.webappsec.org/w/page/13246936/Information%20Leakage", 

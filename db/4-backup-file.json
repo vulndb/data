@@ -31,7 +31,8 @@
       "recommended option."
     ]
   }, 
-  "cwe": ["530"],  
+  "cwe": ["530"],
+  "owasp_top_10": {"2013": [5]},
   "tags": [
     "web",
     "path", 

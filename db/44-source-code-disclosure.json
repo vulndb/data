@@ -38,7 +38,8 @@
       "from the server."
     ]
   }, 
-  "cwe": ["200"],  
+  "cwe": ["200"],
+  "owasp_top_10": {"2013": [6]},
   "tags": [
     "web",
     "code", 
