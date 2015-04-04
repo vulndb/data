@@ -11,10 +11,11 @@
     "is then executed by the server.\n\nCyber-criminals will abuse this", 
     "weakness to perform their own arbitrary commands on the server. This", 
     "can include everything from simple `ping` commands to map the internal", 
-    "network, to obtaining full control of the server.\n\nThe tool was able to", 
-    "inject specific Operating System commands and have the output from", 
-    "that command contained within the server response. This indicates that", 
-    "proper input sanitisation is not occurring."
+    "network, to obtaining full control of the server.",
+    "\n\n",
+    "It was possible to inject and verify the execution of specific Operating",
+    "System commands which indicates that proper input sanitisation is not",
+    "occurring."
   ], 
   "fix": {
     "effort": 50, 
@@ -34,8 +35,7 @@
     "os", 
     "command", 
     "code", 
-    "injection",
-    "error"
+    "injection"
   ], 
   "references": [
     {
