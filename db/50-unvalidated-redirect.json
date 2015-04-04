@@ -27,6 +27,7 @@
       "server should redirect to a standard error page."
     ]
   }, 
+  "cwe": ["601"],
   "tags": [
     "web",
     "unvalidated", 

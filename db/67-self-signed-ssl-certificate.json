@@ -16,6 +16,7 @@
       "the newly generated one."
     ]
   }, 
+  "cwe": ["296"],
   "tags": [
     "web",
     "unencrypted", 

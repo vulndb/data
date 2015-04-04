@@ -36,6 +36,7 @@
       "column is configured to contain integers."
     ]
   }, 
+  "cwe": ["89"],
   "tags": [
     "web",
     "sql", 

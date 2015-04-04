@@ -16,6 +16,7 @@
     "the web page does not validate the parameter value prior to", 
     "redirecting the client to the injected value."
   ], 
+  "cwe": ["601"],  
   "fix": {
     "effort": 50, 
     "guidance": [

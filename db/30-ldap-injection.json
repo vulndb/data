@@ -33,6 +33,7 @@
       "escaping."
     ]
   }, 
+  "cwe": ["90"],  
   "tags": [
     "web",
     "ldap", 

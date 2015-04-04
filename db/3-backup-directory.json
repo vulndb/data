@@ -31,6 +31,7 @@
       "through obscurity and is not a recommended option."
     ]
   }, 
+  "cwe": ["530"],
   "tags": [
     "web",
     "path", 

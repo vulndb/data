@@ -9,7 +9,7 @@
     "will use various methods to attempt to compromise credit card", 
     "information that can then be used for fraudulent purposes.\n\nThrough", 
     "the use of regular expressions and CC number format validation,", 
-    "The tool was able to discover a credit card number located within the", 
+    "It was possible to discover a credit card number located within the", 
     "affected page."
   ], 
   "fix": {
@@ -29,11 +29,8 @@
       "DSS)."
     ]
   }, 
+  "cwe": ["200"],
   "references": [
-    {
-      "url": "https://gist.github.com/1182499", 
-      "title": "Luhn Ruby implementation"
-    }, 
     {
       "url": "http://en.wikipedia.org/wiki/Luhn_algorithm", 
       "title": "Wikipedia - Luhn algorithm"

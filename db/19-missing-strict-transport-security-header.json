@@ -29,15 +29,15 @@
       "header policy.\n\nDepending on the environment and the application this", 
       "time period could be from as low as minutes to as long as days."
     ]
-  }, 
+  },
   "references": [
     {
       "url": "http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security", 
-      "title": "Wikipedia"
+      "title": "Wikipedia - HSTS"
     }, 
     {
       "url": "https://www.owasp.org/index.php/HTTP_Strict_Transport_Security", 
-      "title": "OWASP"
+      "title": "OWASP - HSTS"
     }
   ]
 }

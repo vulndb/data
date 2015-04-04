@@ -29,6 +29,7 @@
       "required, then no non-alpha characters should not be accepted."
     ]
   }, 
+  "cwe": ["94", "95"],  
   "tags": [
     "web",
     "code", 

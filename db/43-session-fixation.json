@@ -35,6 +35,7 @@
       "into an authenticated session."
     ]
   }, 
+  "cwe": ["384"],
   "tags": [
     "web",
     "session", 

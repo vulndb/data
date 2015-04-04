@@ -42,6 +42,7 @@
       "enforced by the directory are correct."
     ]
   }, 
+  "cwe": ["22"],
   "tags": [
     "web",
     "path", 

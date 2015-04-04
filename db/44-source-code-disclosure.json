@@ -38,6 +38,7 @@
       "from the server."
     ]
   }, 
+  "cwe": ["200"],  
   "tags": [
     "web",
     "code", 

@@ -32,6 +32,7 @@
       "function.\n"
     ]
   }, 
+  "cwe": ["548"],
   "tags": [
     "web",
     "path", 

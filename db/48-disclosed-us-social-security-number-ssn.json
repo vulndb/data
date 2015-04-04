@@ -21,6 +21,7 @@
       "digits are present within the response (eg. _**********123_)."
     ]
   }, 
+  "cwe": ["213"],  
   "references": [
     {
       "url": "http://www.ssa.gov/pubs/10064.html", 

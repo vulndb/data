@@ -26,7 +26,8 @@
       "(SSL/TLS enabled) and only authorised and trusted clients are", 
       "permitted to use them."
     ]
-  }, 
+  },
+  "cwe": ["749"],
   "tags": [
     "web",
     "http", 

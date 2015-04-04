@@ -27,6 +27,7 @@
       "cross-domain policy."
     ]
   }, 
+  "cwe": ["346"],
   "references": [
     {
       "url": "https://msdn.microsoft.com/en-us/library/cc197955%28v=vs.95%29.aspx", 

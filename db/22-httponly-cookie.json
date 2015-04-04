@@ -28,7 +28,8 @@
       "and therefore setting this flag will not protect those clients against", 
       "this form of attack."
     ]
-  }, 
+  },
+  "cwe": ["87"],
   "references": [
     {
       "url": "https://www.owasp.org/index.php/HttpOnly", 

@@ -27,6 +27,7 @@
         "to the right value from the list matching the `Origin` request header."
     ]
   }, 
+  "cwe": ["346"],
   "references": [
     {
       "url": "https://www.owasp.org/index.php/CORS_OriginHeaderScrutiny", 

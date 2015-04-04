@@ -26,6 +26,7 @@
       "cross-domain policy."
     ]
   }, 
+  "cwe": ["346"],
   "references": [
     {
       "url": "http://blogs.adobe.com/stateofsecurity/2007/07/crossdomain_policy_files_1.html", 

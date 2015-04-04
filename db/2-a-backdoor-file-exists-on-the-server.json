@@ -30,7 +30,8 @@
       "server.\n\nDepending on the environment, investigation into the", 
       "compromise of any other services or servers should be conducted."
     ]
-  }, 
+  },
+  "cwe": ["489"],
   "tags": [
     "web",
     "path", 
@@ -41,7 +42,7 @@
   "references": [
     {
       "url": "https://www.blackhat.com/presentations/bh-usa-07/Wysopal_and_Eng/Presentation/bh-usa-07-wysopal_and_eng.pdf", 
-      "title": "Blackhat"
+      "title": "Static Detection of Application Backdoors"
     }
   ]
 }

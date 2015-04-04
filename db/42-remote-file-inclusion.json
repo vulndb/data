@@ -38,6 +38,7 @@
       "enforced by the directory are correct."
     ]
   }, 
+  "cwe": ["98"],
   "tags": [
     "web",
     "remote", 

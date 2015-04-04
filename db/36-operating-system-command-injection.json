@@ -30,6 +30,7 @@
       "input by the server."
     ]
   }, 
+  "cwe": ["78"],  
   "tags": [
     "web",
     "os", 

@@ -24,6 +24,7 @@
       "the IP address is removed from any response."
     ]
   }, 
+  "cwe": ["200"],
   "references": [
     {
       "url": "http://projects.webappsec.org/w/page/13246936/Information%20Leakage", 

@@ -21,6 +21,7 @@
       "achieved using existing escaping libraries."
     ]
   }, 
+  "cwe": ["89"],
   "tags": [
     "web",
     "nosql", 

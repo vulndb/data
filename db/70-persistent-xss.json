@@ -59,6 +59,7 @@
       "conducted using multiple different browsers and browser versions._"
     ]
   }, 
+  "cwe": ["79"],  
   "tags": [
     "web",
     "xss",

@@ -30,6 +30,7 @@
       "and will therefor never process user supplied input as XPath."
     ]
   }, 
+  "cwe": ["91", "643"],
   "tags": [
     "web",
     "xpath", 

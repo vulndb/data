@@ -29,6 +29,7 @@
       "in the creation of HTTP response bodies\n"
     ]
   }, 
+  "cwe": ["79"],
   "tags": [
     "web",
     "rfd",

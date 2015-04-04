@@ -17,6 +17,7 @@
     "exists.\n\nThe tool also contains a list of common directory names which", 
     "it will attempt to access."
   ], 
+  "cwe": ["538"],
   "fix": {
     "effort": 50, 
     "guidance": [
@@ -37,10 +38,6 @@
     "discovery"
   ], 
   "references": [
-    {
-      "url": "http://cwe.mitre.org/data/definitions/538.html", 
-      "title": "CWE-538"
-    }, 
     {
       "url": "https://www.owasp.org/index.php/Forced_browsing", 
       "title": "OWASP - Forced browsing"
