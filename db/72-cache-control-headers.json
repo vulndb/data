@@ -13,7 +13,7 @@
       "`no-cache, no-store` and the `Pragma` header must be set to `no-cache`."
     ]
   }, 
-  "tags: [
+  "tags": [
     "web",
     "browser",
     "cache",

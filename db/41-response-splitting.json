@@ -25,7 +25,7 @@
       "setting cookie values, redirecting, etc.."
     ]
   }, 
-  "tags: [
+  "tags": [
     "web",
     "response", 
     "splitting", 

@@ -33,7 +33,7 @@
       "escaping."
     ]
   }, 
-  "tags: [
+  "tags": [
     "web",
     "ldap", 
     "injection"

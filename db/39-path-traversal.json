@@ -42,7 +42,7 @@
       "enforced by the directory are correct."
     ]
   }, 
-  "tags: [
+  "tags": [
     "web",
     "path", 
     "traversal", 

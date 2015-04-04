@@ -30,7 +30,7 @@
       "and will therefor never process user supplied input as XPath."
     ]
   }, 
-  "tags: [
+  "tags": [
     "web",
     "xpath", 
     "database", 

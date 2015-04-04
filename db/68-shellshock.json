@@ -18,7 +18,7 @@
       "Upgrade Bash to version 4.3.025 or newer"
     ]
   }, 
-  "tags: [
+  "tags": [
     "web",
     "bash",
     "shellshock"

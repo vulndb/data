@@ -40,7 +40,7 @@
       "references._"
     ]
   }, 
-  "tags: [
+  "tags": [
     "web",
     "csrf", 
     "form", 

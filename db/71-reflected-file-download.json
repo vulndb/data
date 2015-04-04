@@ -29,7 +29,7 @@
       "in the creation of HTTP response bodies\n"
     ]
   }, 
-  "tags: [
+  "tags": [
     "web",
     "rfd",
     "reflected"

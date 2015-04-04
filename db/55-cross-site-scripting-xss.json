@@ -51,7 +51,7 @@
       "conducted using multiple different browsers and browser versions._"
     ]
   }, 
-  "tags: [
+  "tags": [
     "web",
     "xss", 
     "injection", 

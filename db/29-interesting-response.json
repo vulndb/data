@@ -12,7 +12,7 @@
     "effort": 60,
     "guidance": "Manually inspect the HTTP response status code and body"
   }, 
-  "tags: [
+  "tags": [
     "web",
     "interesting", 
     "response", 

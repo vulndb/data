@@ -20,7 +20,7 @@
       "Change the web server configuration in order to disable SSLv2"
     ]
   }, 
-  "tags: [
+  "tags": [
     "web",
     "ssl"
   ],
