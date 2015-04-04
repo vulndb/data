@@ -99,3 +99,17 @@ class TestAllFilesHaveValidSpec(unittest.TestCase):
                 invalid.append(db_file)
 
         self.assertEqual(invalid, [])
+
+    def test_no_multiple_spaces(self):
+        invalid = []
+
+        for vuln_id in DBVuln.get_all_db_ids():
+            db_vuln = DBVuln.from_id(vuln_id)
+
+            if '  ' in db_vuln.fix_guidance:
+                invalid.append((db_vuln.db_file, 'fix_guidance'))
+
+            if '  ' in db_vuln.description:
+                invalid.append((db_vuln.db_file, 'description'))
+
+        self.assertEqual(invalid, [])
