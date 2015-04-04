@@ -14,10 +14,7 @@
     "when the server takes untrusted code (ie. from the client) and", 
     "executes it.\n\nCyber-criminals will abuse this weakness to execute", 
     "arbitrary code on the server, which could result in complete server", 
-    "compromise.\n\nBy injecting server-side code that is known to take a", 
-    "specific amount of time to execute, the tool was able to detect", 
-    "time-based code injection. This indicates that proper input", 
-    "sanitisation is not occurring."
+    "compromise."
   ], 
   "fix": {
     "effort": 50, 
