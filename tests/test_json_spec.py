@@ -1,28 +1,14 @@
-import unittest
 import requests
 import json
 import os
 
 from vulndb import DBVuln
+from tests.vulndb_test import VulnDBTest
 
 SEVERITIES = {'high', 'medium', 'low', 'informational'}
 
 
-class TestAllFilesHaveValidSpec(unittest.TestCase):
-    maxDiff = None
-
-    def get_all_json(self):
-        for _file in os.listdir('db'):
-            yield _file, json.loads(file(os.path.join('db', _file)).read())
-
-    def to_string(self, data):
-        if isinstance(data, basestring):
-            return data
-        else:
-            return ' '.join(data)
-
-    def setUp(self):
-        DBVuln.DB_PATH = 'db'
+class TestAllFilesHaveValidSpec(VulnDBTest):
 
     def url_is_404(self, session, url):
         try:
