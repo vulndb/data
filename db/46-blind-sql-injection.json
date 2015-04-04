@@ -1,6 +1,6 @@
 {
   "id": 46, 
-  "title": "Blind SQL Injection (differential analysis)", 
+  "title": "Blind SQL Injection", 
   "severity": "high", 
   "description": [
     "Due to the requirement for dynamic content of today's web", 
@@ -17,8 +17,9 @@
     "data or use the additional functionality of the database server to", 
     "take control of more server components.\n\nThe successful exploitation", 
     "of a SQL injection can be devastating to an organisation and is one of", 
-    "the most commonly exploited web application vulnerabilities.\n\nThis", 
-    "injection was detected as the tool was able to inject specific SQL", 
+    "the most commonly exploited web application vulnerabilities.",
+    "\n\n",
+    "Injection was detected as it was possible to inject specific SQL", 
     "queries, that if vulnerable, result in the responses for each", 
     "injection being different. This is known as a blind SQL injection", 
     "vulnerability."
