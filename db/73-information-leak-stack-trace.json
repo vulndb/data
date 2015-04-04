@@ -28,7 +28,6 @@
   "cwe": ["200"],
   "tags": [
     "web",
-    "web",
     "error",
     "information leak"
   ],
