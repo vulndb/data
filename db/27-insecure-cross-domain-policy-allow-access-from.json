@@ -1,6 +1,6 @@
 {
   "id": 27, 
-  "title": "Insecure cross-domain policy (allow-access-from)", 
+  "title": "Insecure cross-domain policy", 
   "severity": "low", 
   "description": [
     "The browser security model normally prevents web content from one", 
