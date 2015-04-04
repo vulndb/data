@@ -19,7 +19,7 @@
     "guidance": [
       " * Review the generated HTML source and ensure that none of it's sections",
       "can be used in a UI misrepresentation attack.\n",
-      " * Perform strict data validation (e.g. syntax, length, etc.) before",
+      "* Perform strict data validation (e.g. syntax, length, etc.) before",
       "using the user-provided data to render HTML pages.\n"
     ]
   },

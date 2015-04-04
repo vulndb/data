@@ -23,12 +23,12 @@
       "Apache, etc.). If directory listing is required, and permitted, then", 
       "steps should be taken to ensure that the risk of such a configuration", 
       "is reduced.\n\nThese can include:\n",
-      " 1. Requiring authentication to access affected pages.\n",
-      " 2. Adding the affected path to the `robots.txt` file to prevent the",
+      "1. Requiring authentication to access affected pages.\n",
+      "2. Adding the affected path to the `robots.txt` file to prevent the",
       "directory contents being searchable via search engines.\n",
-      " 3. Ensuring that sensitive files are not stored within the", 
+      "3. Ensuring that sensitive files are not stored within the", 
       "web or document root.\n",
-      " 4. Removing any files that are not required for the application to",
+      "4. Removing any files that are not required for the application to",
       "function.\n"
     ]
   }, 

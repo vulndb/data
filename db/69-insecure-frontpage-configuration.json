@@ -13,7 +13,7 @@
     "effort": 10,
     "guidance": [
       " 1. Change the permissions on directories and files accessible via IIS\n",
-      " 2. Setup authentication and authorization for FrontPage extension access"
+      "2. Setup authentication and authorization for FrontPage extension access"
     ]
   }, 
   "tags": [

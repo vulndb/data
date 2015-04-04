@@ -23,7 +23,7 @@
       "others not listed in the directive, and will therefor block any method", 
       "tampering attempts.\n\nMost commonly, the only HTTP methods required for", 
       "most scenarios are `GET` and `POST`. An example of permitting these", 
-      "HTTP methods is:  `<LimitExcept POST GET> require valid-user", 
+      "HTTP methods is: `<LimitExcept POST GET> require valid-user", 
       "</LimitExcept>`"
     ]
   }, 

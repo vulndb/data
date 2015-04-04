@@ -11,17 +11,17 @@
     "\n\n",
     "In its most common form, information leakage is the result of one or more",
     "of the following conditions:\n",
-    " * A failure to scrub out HTML/Script comments containing sensitive",
+    "* A failure to scrub out HTML/Script comments containing sensitive",
     "information\n",
-    " * Improper application or server configurations\n",
-    " * Improper application error handling\n"
+    "* Improper application or server configurations\n",
+    "* Improper application error handling\n"
   ],
   "fix": {
     "effort": 60,
     "guidance": [
       " * Ensure that the application source handles exceptions and errors in",
       "a such a way that no sensitive information is disclosed to the users\n",
-      " * Configure the application server to handle and log any exceptions",
+      "* Configure the application server to handle and log any exceptions",
       "that the application might yield\n"
     ]
   },
