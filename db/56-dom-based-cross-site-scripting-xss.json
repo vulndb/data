@@ -35,7 +35,8 @@
       "`document.writeIn`, `element.innerHTML`, or `element.outerHTML `etc."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "xss", 
     "dom", 
     "injection", 

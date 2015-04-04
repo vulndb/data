@@ -36,7 +36,8 @@
       "the affected pages."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "asp", 
     "iis", 
     "server"

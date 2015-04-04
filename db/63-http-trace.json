@@ -26,7 +26,8 @@
       "not have any negative impact on the server or application."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "xst", 
     "methods", 
     "trace", 

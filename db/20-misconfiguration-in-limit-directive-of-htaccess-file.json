@@ -27,7 +27,8 @@
       "</LimitExcept>`"
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "htaccess", 
     "server", 
     "limit"

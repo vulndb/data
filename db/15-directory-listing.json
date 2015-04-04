@@ -30,7 +30,8 @@
       "the application to function."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "path", 
     "directory", 
     "listing", 

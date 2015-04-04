@@ -38,7 +38,8 @@
       "other files etc."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "file", 
     "upload"
   ], 

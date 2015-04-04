@@ -22,7 +22,8 @@
       "achieved using existing escaping libraries."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "nosql", 
     "blind", 
     "injection", 

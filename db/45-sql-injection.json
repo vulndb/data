@@ -36,7 +36,8 @@
       "column is configured to contain integers."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "sql", 
     "injection", 
     "database", 

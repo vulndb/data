@@ -30,7 +30,8 @@
       "128 bit) should also be disabled."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "unencrypted", 
     "resource", 
     "javascript", 

@@ -29,7 +29,8 @@
       "a recommended option."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "path", 
     "directory", 
     "common", 

@@ -31,7 +31,8 @@
       "recommended option."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "path", 
     "backup", 
     "file", 

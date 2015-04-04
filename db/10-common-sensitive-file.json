@@ -28,7 +28,8 @@
       "recommended option."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "common", 
     "path", 
     "file", 

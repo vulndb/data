@@ -31,7 +31,8 @@
       "file system permissions should also enforce strict limitations."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "http", 
     "methods", 
     "put", 

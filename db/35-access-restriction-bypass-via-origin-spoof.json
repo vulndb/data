@@ -26,7 +26,8 @@
       "is trivial to change."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "access", 
     "restriction", 
     "server", 

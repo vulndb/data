@@ -35,7 +35,8 @@
       "into an authenticated session."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "session", 
     "cookie", 
     "injection", 

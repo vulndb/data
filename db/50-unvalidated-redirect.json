@@ -27,7 +27,8 @@
       "server should redirect to a standard error page."
     ]
   }, 
-  "tags": [
+  "tags: [
+    "web",
     "unvalidated", 
     "redirect", 
     "injection", 
