@@ -16,7 +16,7 @@
   "fix": {
     "effort": 50, 
     "guidance": [
-      "E-mail addresses should be presented in such                     a way", 
+      "E-mail addresses should be presented in such a way", 
       "that it is hard to process them automatically."
     ]
   }
