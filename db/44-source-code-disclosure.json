@@ -38,7 +38,7 @@
       "from the server."
     ]
   }, 
-  "cwe": ["200"],
+  "cwe": ["200", "548"],
   "owasp_top_10": {"2013": [6]},
   "tags": [
     "web",
@@ -47,11 +47,5 @@
     "file", 
     "inclusion", 
     "disclosure"
-  ], 
-  "references": [
-    {
-      "url": "http://cwe.mitre.org/data/definitions/540.html", 
-      "title": "CWE-540"
-    }
   ]
 }
