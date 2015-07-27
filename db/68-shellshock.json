@@ -1,6 +1,6 @@
 {
   "id": 68,
-  "title": "ShellSock",
+  "title": "ShellShock",
   "severity": "high",
   "description": [
     "GNU Bash through 4.3 processes trailing strings after function",
