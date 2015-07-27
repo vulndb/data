@@ -45,10 +45,6 @@
     {
       "url": "http://projects.webappsec.org/w/page/13246922/Directory%20Indexing", 
       "title": "WASC"
-    }, 
-    {
-      "url": "http://cwe.mitre.org/data/definitions/548.html", 
-      "title": "CWE-548"
     }
   ]
 }
