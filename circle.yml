@@ -9,7 +9,7 @@ machine:
 
 dependencies:
   post:
-    - pip install --upgrade setuptools
+    - pip install --upgrade pip
     - pip install --upgrade -r tests/requirements.txt
     - pip --version
     - pip freeze
