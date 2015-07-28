@@ -69,10 +69,6 @@
       "title": "Secunia"
     }, 
     {
-      "url": "http://ha.ckers.org/xss.html", 
-      "title": "ha.ckers"
-    }, 
-    {
       "url": "https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet", 
       "title": "OWASP"
     }
