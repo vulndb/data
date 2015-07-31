@@ -1,0 +1,38 @@
+{
+  "id": 76,
+  "title": "X-Content-Type-Options header missing",
+  "severity": "low",
+  "description": [
+    "'X-Content-Type-Options' is a type of HTTP header that can be used to prevent MIME",
+    "content-sniffing attacks in Internet Explorer and Google Chrome. MIME content-sniffing",
+    "is a mechanism that allows browsers to inspect and dynamically guess the content",
+    "type and file type.\n\nMIME Sniffing checking algorithm has known problems which",
+    "might allow users to upload files that might contain malicous code. If an attacker",
+    "can spoof a file type/content and upload it to the application successfully, it is",
+    "possible to inject malicous code which can be downloaded and viewed by other",
+    "users of the application. This can lead to attacks such as persistant Cross-Site Scripting."
+  ],
+  "fix": {
+    "effort": 50,
+    "guidance": [
+      "'X-Content-Type-Options: nosniff' header should be implemented which",
+      "allows a web server to force the browser into disabling MIME Sniffing",
+      "for a served file. The nosniff option will only load any external resource",
+      "if the content-type maches what is expected of the file type."
+    ]
+  },
+  "cwe": [],
+  "owasp_top_10": {"2013": [7]},
+  "tags": [
+    "content",
+    "sniffing",
+    "missing",
+    "header"
+  ],
+  "references": [
+    {
+      "url": "https://msdn.microsoft.com/en-us/library/gg622941(v=vs.85).aspx",
+      "title": "Reducing MIME type security risks"
+    }
+  ]
+}
