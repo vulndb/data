@@ -15,6 +15,8 @@ information easily accessible from different programming languages these SDKs
 are available:
 
  * [python-sdk](https://github.com/vulndb/python-sdk)
+ * [vulndb-go](https://github.com/vulndb/vulndb-go)
+ * [php-sdk](https://github.com/vulndb/php-sdk)
 
 ## Projects using this database
  * [w3af](http://www.w3af.org/)
