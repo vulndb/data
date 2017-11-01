@@ -2,37 +2,25 @@
   "id": 9, 
   "title": "Common directory", 
   "severity": "medium", 
-  "description": [
-    "Web applications are often made up of multiple files and directories.", 
-    "It is possible that over time some directories may become unreferenced", 
-    "(unused) by the web application and forgotten about by the", 
-    "administrator/developer. Because web applications are built using", 
-    "common frameworks, they contain common directories that can be", 
-    "discovered (independent of server).\n\nDuring the initial recon stages", 
-    "of an attack, cyber-criminals will attempt to locate unreferenced", 
-    "directories in the hope that the directory will assist in further", 
-    "compromise of the web application. To achieve this they will make", 
-    "thousands of requests using word lists containing common names. The", 
-    "response headers from the server will then indicate if the directory", 
-    "exists.\n\nThe tool also contains a list of common directory names which", 
-    "it will attempt to access."
+  "description": {
+    "$ref": "#/files/description/9"
+  }, 
+  "cwe": [
+    "538"
   ], 
-  "cwe": ["538"],
-  "owasp_top_10": {"2013": [5]},
-  "fix": {
-    "effort": 50, 
-    "guidance": [
-      "If directories are unreferenced then they should be removed from the", 
-      "web root and/or the application directory.\n\nPreventing access without", 
-      "authentication may also be an option and can stop a client from being", 
-      "able to view the contents of a file, however it is still likely that", 
-      "the directory structure will be able to be discovered.\n\nUsing obscure", 
-      "directory names is implementing security through obscurity and is not", 
-      "a recommended option."
+  "owasp_top_10": {
+    "2013": [
+      5
     ]
   }, 
+  "fix": {
+    "effort": 50, 
+    "guidance": {
+      "$ref": "#/files/fix/55"
+    }
+  }, 
   "tags": [
-    "web",
+    "web", 
     "path", 
     "directory", 
     "common", 

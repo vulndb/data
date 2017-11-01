@@ -2,18 +2,17 @@
   "id": 29, 
   "title": "Interesting response", 
   "severity": "informational", 
-  "description": [
-    "The server responded with a strange HTTP status code. This is a non-issue",
-    "however exotic HTTP response status codes can provide useful insights",
-    "into the behavior of the web application and assist with the information",
-    "security analysis."
-  ], 
+  "description": {
+    "$ref": "#/files/description/29"
+  }, 
   "fix": {
-    "effort": 60,
-    "guidance": "Manually inspect the HTTP response status code and body"
+    "effort": 60, 
+    "guidance": {
+      "$ref": "#/files/fix/7"
+    }
   }, 
   "tags": [
-    "web",
+    "web", 
     "interesting", 
     "response", 
     "server"

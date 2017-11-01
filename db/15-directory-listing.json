@@ -2,40 +2,25 @@
   "id": 15, 
   "title": "Directory listing", 
   "severity": "low", 
-  "description": [
-    "Web servers permitting directory listing are typically used for", 
-    "sharing files.\n\nDirectory listing allows the client to view a simple", 
-    "list of all the files and folders hosted on the web server. The client", 
-    "is then able to traverse each directory and download the files.", 
-    "Cyber-criminals will utilise the presence of directory listing to", 
-    "discover sensitive files, download protected content, or even just", 
-    "learn how the web application is structured.\n\nThe tool discovered that", 
-    "the affected page permits directory listing."
-  ], 
+  "description": {
+    "$ref": "#/files/description/15"
+  }, 
   "fix": {
     "effort": 50, 
-    "guidance": [
-      "Unless the web server is being utilised to share static and", 
-      "non-sensitive files, enabling directory listing is considered a poor", 
-      "security practice\n\nThis can typically be done with a simple", 
-      "configuration change on the server. The steps to disable the directory", 
-      "listing will differ depending on the type of server being used (IIS,", 
-      "Apache, etc.). If directory listing is required, and permitted, then", 
-      "steps should be taken to ensure that the risk of such a configuration", 
-      "is reduced.\n\nThese can include:\n",
-      "1. Requiring authentication to access affected pages.\n",
-      "2. Adding the affected path to the `robots.txt` file to prevent the",
-      "directory contents being searchable via search engines.\n",
-      "3. Ensuring that sensitive files are not stored within the", 
-      "web or document root.\n",
-      "4. Removing any files that are not required for the application to",
-      "function.\n"
+    "guidance": {
+      "$ref": "#/files/fix/41"
+    }
+  }, 
+  "cwe": [
+    "548"
+  ], 
+  "owasp_top_10": {
+    "2013": [
+      5
     ]
   }, 
-  "cwe": ["548"],
-  "owasp_top_10": {"2013": [5]},
   "tags": [
-    "web",
+    "web", 
     "path", 
     "directory", 
     "listing", 

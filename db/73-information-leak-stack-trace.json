@@ -1,40 +1,32 @@
 {
-  "id": 73,
-  "title": "Application error message",
-  "severity": "low",
-  "description": [
-    "Information Leakage is an application weakness where an application",
-    "reveals sensitive data, such as technical details of the web application,",
-    "environment, or user-specific data. Sensitive data may be used by an",
-    "attacker to exploit the target web application, its hosting network,",
-    "or its users.",
-    "\n\n",
-    "In its most common form, information leakage is the result of one or more",
-    "of the following conditions:\n",
-    "* A failure to scrub out HTML/Script comments containing sensitive",
-    "information\n",
-    "* Improper application or server configurations\n",
-    "* Improper application error handling\n"
-  ],
+  "id": 73, 
+  "title": "Application error message", 
+  "severity": "low", 
+  "description": {
+    "$ref": "#/files/description/73"
+  }, 
   "fix": {
-    "effort": 60,
-    "guidance": [
-      " * Ensure that the application source handles exceptions and errors in",
-      "a such a way that no sensitive information is disclosed to the users\n",
-      "* Configure the application server to handle and log any exceptions",
-      "that the application might yield\n"
+    "effort": 60, 
+    "guidance": {
+      "$ref": "#/files/fix/42"
+    }
+  }, 
+  "cwe": [
+    "200"
+  ], 
+  "owasp_top_10": {
+    "2013": [
+      6
     ]
-  },
-  "cwe": ["200"],
-  "owasp_top_10": {"2013": [6]},
+  }, 
   "tags": [
-    "web",
-    "error",
+    "web", 
+    "error", 
     "information leak"
-  ],
+  ], 
   "references": [
     {
-      "url": "http://projects.webappsec.org/w/page/13246936/Information%20Leakage",
+      "url": "http://projects.webappsec.org/w/page/13246936/Information%20Leakage", 
       "title": "WASC threat classification"
     }
   ]
