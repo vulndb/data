@@ -1,0 +1,24 @@
+If a server has been previously compromised, there is a high
+probability that the cyber-criminal has installed a backdoor so that
+they can easily return to the server if required. One method of
+achieving this is to place a web backdoor or web shell within the web
+root of the web server. This will then enable the cyber-criminal to
+access the server through a HTTP/S session.
+
+Although extremely bad
+practice, it is possible that the web backdoor or web shell has been
+placed there by an administrator so they can perform administrative
+activities remotely.
+
+During the initial recon stages of an attack,
+cyber-criminals will attempt to locate these web backdoors or shells
+by requesting the names of the most common and well known ones.
+
+By
+analysing the response, they are able to determine if a web backdoor
+or web shell exists. These web backdoors or web shells can then
+provide an easy path for further compromise of the server.
+
+By
+utilising the same methods as the cyber-criminals, the tool was able to
+discover a possible web backdoor or web shell.
