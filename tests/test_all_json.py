@@ -14,18 +14,20 @@ class TestAllFilesAreJSON(unittest.TestCase):
         not_json = []
 
         for _file in os.listdir('db'):
-            if not _file.endswith('.json'):
+            if os.path.isfile(_file) and not _file.endswith('.json'):
                 not_json.append(_file)
 
-        self.assertEqual(not_json, [])
+        self.assertEqual([], not_json)
 
     def test_all_files_JSON_content(self):
         not_json = []
 
         for _file in os.listdir('db'):
+            if not os.path.isfile(_file):
+                continue
             try:
                 json.loads(file(os.path.join('db', _file)).read())
             except:
                 not_json.append(_file)
 
-        self.assertEqual(not_json, [])
+        self.assertEqual([], not_json)

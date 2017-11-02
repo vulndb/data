@@ -33,11 +33,11 @@ class TestAllFilesHaveValidSpec(VulnDBTest):
         invalid = []
 
         for _file, db_data in self.get_all_json():
-            description = self.to_string(db_data['description'])
+            description = self.get_description(db_data['description']['$ref'])
             if len(description) <= 30:
                 invalid.append(_file)
 
-            guidance = self.to_string(db_data['fix']['guidance'])
+            guidance = self.get_fix(db_data['fix']['guidance']['$ref'])
             if len(guidance) <= 30:
                 invalid.append(_file)
 

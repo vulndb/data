@@ -7,13 +7,13 @@ class TestValidMarkdown(VulnDBTest):
         invalid = []
 
         for _file, db_data in self.get_all_json():
-            description = self.to_string(db_data['description'])
+            description = self.get_description(db_data['description']['$ref'])
             try:
                 markdown(description)
             except:
                 invalid.append(_file)
 
-            guidance = self.to_string(db_data['fix']['guidance'])
+            guidance = self.get_fix(db_data['fix']['guidance']['$ref'])
             try:
                 markdown(guidance)
             except:
