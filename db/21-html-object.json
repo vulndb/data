@@ -2,17 +2,13 @@
   "id": 21, 
   "title": "HTML object", 
   "severity": "informational", 
-  "description": [
-    "Most automated tools are not able to analyze the security of client-side",
-    "technologies such as Flash and Java applets. This informational finding",
-    "serves as a heads-up to the information security specialist to review",
-    "the objects in question using a different method."
-  ], 
+  "description": {
+    "$ref": "#/files/description/21"
+  }, 
   "fix": {
-    "effort": 120,
-    "guidance": [
-        "Analyze the objects using manual analysis techniques such as",
-        "a local proxy, decompilation or reverse engineering."
-        ]
+    "effort": 120, 
+    "guidance": {
+      "$ref": "#/files/fix/16"
+    }
   }
 }
