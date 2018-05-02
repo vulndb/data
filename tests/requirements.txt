@@ -5,4 +5,4 @@ pyopenssl
 ndg-httpsclient
 pyasn1
 markdown
-nosetests
+nose
