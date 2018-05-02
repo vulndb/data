@@ -9,7 +9,7 @@ jobs:
   build:
 
     docker:
-      - image: circleci/python:2.7.9
+      - image: circleci/python:2.7.14
 
     steps:
       - checkout
