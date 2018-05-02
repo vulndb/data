@@ -1,0 +1,26 @@
+#
+#   This file is used to configure the continuous integration for vulndb/data
+#
+#   As a user you don't need to understand this file.
+#
+version: 2
+
+jobs:
+  build:
+
+    docker:
+      - image: circleci/python:2.7.9
+
+    steps:
+      - checkout
+
+      - run:
+          command: |
+            pip install --upgrade pip
+            pip install --upgrade -r tests/requirements.txt
+            pip --version
+            pip freeze
+
+      - run:
+          command: |
+            nosetests -s -v tests/
