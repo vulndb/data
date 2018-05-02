@@ -17,7 +17,7 @@ jobs:
       - run:
           command: |
             pip install --upgrade pip
-            pip install --upgrade -r tests/requirements.txt
+            pip install --user --upgrade -r tests/requirements.txt
             pip --version
             pip freeze
 
