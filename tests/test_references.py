@@ -5,6 +5,7 @@ from tests.vulndb_test import VulnDBTest
 
 CVE_URL_PATTERN = '^http://cwe.mitre.org/data/definitions/[0-9]+\.html$'
 
+
 class TestReferences(VulnDBTest):
     """
     We don't want redundant references.  Test for the presence of a

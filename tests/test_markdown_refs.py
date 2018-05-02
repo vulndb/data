@@ -11,10 +11,12 @@ class TestReferences(VulnDBTest):
     """
     def setUp(self):
         super(TestReferences, self).setUp()
+
         self.desc_ids = set()
         self.referenced_desc_ids = set()
         self.fix_ids = set()
         self.referenced_fix_ids = set()
+
         for f in os.listdir(DBVuln.DB_PATH):
             fpath = os.path.join(DBVuln.DB_PATH, f)
             if not os.path.isfile(fpath):
@@ -25,12 +27,14 @@ class TestReferences(VulnDBTest):
             self.referenced_desc_ids.add(desc_id)
             fix_id = data['fix']['guidance']['$ref'].split('/')[-1]
             self.referenced_fix_ids.add(fix_id)
+
         for f in os.listdir(os.path.join(DBVuln.DB_PATH, 'description')):
             fpath = os.path.join(DBVuln.DB_PATH, 'description', f)
             if not os.path.isfile(fpath):
                 continue
             f_id = f.replace('.md', '').split('-')[0]
             self.desc_ids.add(f_id)
+
         for f in os.listdir(os.path.join(DBVuln.DB_PATH, 'fix')):
             fpath = os.path.join(DBVuln.DB_PATH, 'fix', f)
             if not os.path.isfile(fpath):
