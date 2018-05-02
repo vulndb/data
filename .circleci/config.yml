@@ -17,13 +17,10 @@ jobs:
       - run:
           command: |
             pip install --upgrade pip
-
             pip install --user --upgrade -r tests/requirements.txt
-            export PATH=$PATH:/home/circleci/.local/bin
-
             pip --version
             pip freeze
 
       - run:
           command: |
-            nosetests -s -v tests/
+            /home/circleci/.local/bin/nosetests -s -v tests/
