@@ -5,11 +5,12 @@ provide a vulnerability database which is:
  to fix the vulnerability
  
  * Easy to integrate by developers into any vulnerability scanner, report
- generator, penetration testing tool or related tool.
+ generator, penetration testing or related tool.
  
- * Trivial to contribute to, by using JSON to store the vulnerabilities
+ * Trivial to contribute to, by using JSON and Markdown to store the vulnerabilities
 
 ## SDKs
+
 This repository holds the vulnerability database itself, in order to make the
 information easily accessible from different programming languages these SDKs
 are available:
@@ -19,21 +20,32 @@ are available:
  * [php-sdk](https://github.com/vulndb/php-sdk)
 
 ## Projects using this database
+
  * [w3af](http://www.w3af.org/)
  
 ## Contributing
+
 We would love to receive your [pull-requests](https://help.github.com/articles/using-pull-requests/)!
+
 The easiest way to contribute is:
  * Browse our repository and find the JSON file you would like to edit
  * Click on the top-right icon in the github UI that will open the online text editor
  * Change the file
  * Save/commit
 
+## Translations
+The vulnerability database [supports translations](https://github.com/vulndb/data/wiki/Translations)
+and we're happy to add your native language to reach more users.
+
 ## Credits
- * JSON format specification by [Andres Riancho](https://github.com/andresriancho/), [Tasos Laskos](https://github.com/Zapotek) and [Vyacheslav Bakhmutov](https://github.com/m0sth8)
+
+ * JSON format specification by [Andres Riancho](https://github.com/andresriancho/),
+   [Tasos Laskos](https://github.com/Zapotek) and [Vyacheslav Bakhmutov](https://github.com/m0sth8)
+   
  * Initial data provided by the [Arachni scanner](http://www.arachni-scanner.com/) project
 
 ## History
+
 The project founders maintain one or more vulnerability scanners, each of those
 tools had a different vulnerability database with different fields, formats,
 texts and quality. To reduce our documentation efforts we decided to commoditize
@@ -63,4 +75,5 @@ The initial database information was contributed by the [Arachni scanner](http:/
 imported in [this commit](https://github.com/vulndb/data/commit/e27222af21b0569525718f591eaa2c517d4c1da2). 
 
 ## Build status
+
 [![Circle CI](https://circleci.com/gh/vulndb/data.svg?style=svg)](https://circleci.com/gh/vulndb/data)
