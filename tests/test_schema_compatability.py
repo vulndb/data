@@ -23,7 +23,7 @@ class TestAllFilesSchemaCompatability(VulnDBTest):
             self.fail(e)
 
         incompatible = []
-        for _file, db_data in self.get_all_json():
+        for language, _file, db_data in self.get_all_json():
             try:
                 jsonschema.validate(db_data, schema)
             except jsonschema.ValidationError as e:

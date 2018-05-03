@@ -1,9 +1,4 @@
-import re
-
-from vulndb import DBVuln
 from tests.vulndb_test import VulnDBTest
-
-CVE_URL_PATTERN = '^http://cwe.mitre.org/data/definitions/[0-9]+\.html$'
 
 
 class TestReferences(VulnDBTest):
@@ -16,11 +11,15 @@ class TestReferences(VulnDBTest):
     def test_no_redundant_cve_mitre_org_urls(self):
         invalid = []
 
-        for vuln_id in DBVuln.get_all_db_ids():
-            db_vuln = DBVuln.from_id(vuln_id)
+        for language, db_path_file, db_data in self.get_all_json():
+            reference_urls = set()
 
-            for reference in db_vuln.references:
-                if re.match(CVE_URL_PATTERN, reference.url):
+            reference_list = db_data.get('references', [])
+            for reference in reference_list:
+                reference_urls.add(reference['url'])
+
+            for reference in reference_urls:
+                if 'cwe.mitre.org' in reference:
                     invalid.append(reference.url)
 
         self.assertEqual(invalid, [])
